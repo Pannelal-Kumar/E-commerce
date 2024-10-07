@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-head">
+            <!-- Sidebar 1 -->
+            <div class="sidebar-section">
+                <div class="d-flex align-item-center">
+                    <button type="button" class="btn menu-icon1" id="modalButton1">
+                        <div class="troggle" id="troggle1">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </button>
+                </div>
+                <div id="mySidebar1" class="sidebar">
+                    <div class="logo p-3">
+                        <a href="#"><i class="fa-regular fa-circle-user icon"></i> Login & Signup</a>
+                        <a href="javascript:void(0)" class="closebtn" id="closeSidebar1">&times;</a>
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-table"></i>All Categories</a></li>
+                        <hr>
+                        <li><a href="#"><i class="fa-solid fa-tag"></i>Offer Zone</a></li>
+                        <hr>
+                        <li><a href="#"><i class="fa-solid fa-language"></i>Choose Language</a></li>
+                        <hr>
+                        <li><a href="#"><i class="fa-solid fa-user"></i>My Account</a></li>
+                        <hr>
+                        <li><a href="#"><i class="fa-solid fa-bag-shopping"></i>My Order</a></li>
+                        <hr>
+                        <li><a href="#"><i class="fa-solid fa-ticket"></i>Coupons</a></li>
+                        <hr>
+                        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>My Cart</a></li>
+                        <hr>
+                        <li><a href="#"><i class="fa-regular fa-heart"></i>My Wishlist</a></li>
+                        <hr>
+                        <li><a href="#"><i class="fa-solid fa-bell"></i>Notification</a></li>
+                        <hr>
+                        <li><a href="#"><i class="fa-solid fa-question-circle"></i>Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Sidebar 1 -->
+
+            <div class="logo">
+                <a href="#"><img src="https://www.way2it.in/frontend/images/logo.png" alt="Logo"></a>
+            </div>
+
+            <form action="#" class="search-bar">
+                <button type="submit"><i class="fas fa-search"></i></button>
+                <input type="text" placeholder="Search for products, brands and more" class="text-truncate">
+            </form>
+
+            <div class="navbar-links">
+                <ul class="all-link">
+                    <li class="dropdown login-dropdown">
+                        <a href="#" class="login"><i class="fa-regular fa-circle-user icon"></i> Login
+                            <i class="fa fa-chevron-down arrow"></i></a>
+                        <ul class="login-sub-menu sub-menu p-0 m-0">
+                            <div class="new-customer d-flex"><a href="#">New Customer?</a>
+                                <a href="#" class="signup">Sign Up</a>
+                            </div>
+                            <li><a href="#"><i class="fa-regular fa-circle-user icon p-2"></i>My Profile</a></li>
+                            <li><a href="#"><i class="fa-solid fa-bag-shopping p-3"></i>Orders</a></li>
+                            <li><a href="#"><i class="fa-regular fa-heart p-3"></i>Wishlist</a></li>
+                            <li><a href="#"><i class="fa fa-gift p-3"></i>Rewards</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#"><i class="fas fa-store icon"></i> Become a Seller</a></li>
+
+                    <li><a href="#" class="cart"><i class="fas fa-shopping-cart icon"></i> Cart</a></li>
+
+                    <li class="dropdown more-dropdown p-0 m-0">
+                        <a href="#" class="more"><i class="fas fa-ellipsis-v icon"></i></a>
+                        <ul class="more-sub-menu more-menu p-0 m-0">
+                            <li><a href="#"><i class="fa-solid fa-bell ms-2"></i> Notification Preferences</a></li>
+                            <li><a href="#"><i class="fa fa-headset ms-2"></i> 24x7 Customer Care</a></li>
+                            <li><a href="#"><i class="fa fa-bullhorn ms-2"></i> Advertise</a></li>
+                            <li><a href="#"><i class="fa fa-download ms-2"></i> App Download</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mobile-links">
+                <ul class="all-link">
+                    <li><a href="#"><i class="fa-regular fa-circle-user icon"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-heart icon"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping icon"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="nav-menu">
+        <ul>
+            <!-- Sidebar 2 -->
+            <div class="sidebar-section">
+                <div class="d-flex align-item-center">
+                    <button type="button" class="btn menu-icon2" id="modalButton2">
+                        <div class="troggle" id="troggle2">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </button>
+                    <li class="mt-2"><a href="#">All Categories</a></li>
+                </div>
+                <div id="mySidebar2" class="sidebar">
+                    <div class="logo p-3">
+                        <a href="#"><i class="fa-regular fa-circle-user icon"></i> Login & Signup</a>
+                        <a href="javascript:void(0)" class="closebtn" id="closeSidebar2">&times;</a>
+                    </div>
+                    <ul>
+                        <h4>Digital Content and Devices</h4>
+                        <li><a href="#">Echo $ Alexa</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li><a href="#">Fire TV</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li><a href="#">Kindle E-Readers & eBooks</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li><a href="#">Audible Audiobooks</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li><a href="#">Prime Video</a><i class="fa-solid fa-angle-right"></i></li>
+                    </ul>
+
+                    <ul>
+                        <h4>Shop by Category</h4>
+                        <li><a href="#">Mobile & Computer</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li><a href="#">TV,Appliances,Electronic</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li><a href="#">Men's Fashion</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li><a href="#">Women's Fashion</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li><a href="#">Prime Video</a><i class="fa-solid fa-angle-right"></i></li>
+                    </ul>
+
+
+                    <ul>
+                        <h4>Programs & Features</h4>
+                        <li><a href="#">Echo $ Alexa</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li><a href="#">Fire TV</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li><a href="#">Kindle E-Readers & eBooks</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li><a href="#">Audible Audiobooks</a><i class="fa-solid fa-angle-right"></i></li>
+                        <li><a href="#">Prime Video</a><i class="fa-solid fa-angle-right"></i></li>
+                    </ul>
+
+                    <ul>
+                        <h4>Help & Settings</h4>
+                        <li><a href="#">Your Account</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Sign in</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--End Sidebar 2--->
+
+            <li><a href="#">Today Deals</a></li>
+
+            <li><a href="#">Trending</a> </li>
+
+            <li><a href="#">Best Sellers</a> </li>
+
+            <li><a href="#">New Releases</a></li>
+
+            <li><a href="#">Movers & Shakers</a></li>
+
+        </ul>
+    </div>
+
+    <!-- Swiper -->
+    <div class="ads-section mt-4 shadow-lg">
+        <div class="swiper mySwiper shadow">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/4ea59148a8b8f66a.jpg?q=20" alt=""
+                        class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/19371d44541a02ab.jpg?q=20" alt=""
+                        class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/f4a793ca0647bb43.jpg?q=20" alt=""
+                        class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/3cae0b8501e2dbbc.jpeg?q=20" alt=""
+                        class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/f4a793ca0647bb43.jpg?q=20" alt=""
+                        class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/5448938c117980ac.jpeg?q=20" alt=""
+                        class="img-fluid">
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+
+    <!-- start Get it all right here -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="header-items p-5">
+                <div class="owl-carousel owl-theme owl-carousel-1">
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-6406/k2-_987b6e28-ac24-4c30-a150-afe57033daf2.v1.jpg?odn&odn&odnBg=FFFFFF"
+                                alt="">
+                            <div class="text-center">
+                                <span>Grocery</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-8370/k2-_15a0a4d2-1619-4914-94cd-774567d41404.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+                                alt="">
+                            <div class="text-center">
+                                <span>Home</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-16a3/k2-_f9b2f53c-a2c0-40bf-8e25-692c544b3baf.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+                                alt="">
+                            <div class="text-center">
+                                <span>Patio $ Garden</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-48f6/k2-_7aed4b13-f076-4785-8b0c-2a8343c2b70c.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+                                alt="">
+                            <div class="text-center">
+                                <span>Fashion</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-9674/k2-_cd6b8be4-8bfb-47bc-9843-49e8ed571106.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+                                alt="">
+                            <div class="text-center">
+                                <span>Electronic</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-648f/k2-_c76e7139-cecb-4d48-893d-686d9bbbbfbe.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+                                alt="">
+                            <div class="text-center">
+                                <span>Baby</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-6897/k2-_9d771225-ddc0-4ae4-8302-1921a8ace961.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+                                alt="">
+                            <div class="text-center">
+                                <span>Toys</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-db33/k2-_76752a43-1765-455e-85d2-16a450d8ff5a.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+                                alt="">
+                            <div class="text-center">
+                                <span>Health & wellness</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-2281/k2-_240ae09f-fd48-4b80-aa8d-7bbed28ae7ea.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+                                alt="">
+                            <div class="text-center">
+                                <span>Personal Care</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-5ae9/k2-_d40ab856-ee32-437c-9a44-c9b93df4aff0.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+                                alt="">
+                            <div class="text-center">
+                                <span>Beauty</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-e091/k2-_5abd632e-14d1-44b2-8361-fd23d6198365.v1.jpg?odnHeight=120&odnWidth=120&odnBg=FFFFFF"
+                                alt="">
+                            <div class="text-center">
+                                <span>Auto & Tires</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Get it all right here -->
+
+        <!-- Swiper 2-->
+        <div class="ads-section1 mt-5 shadow-lg">
+            <div class="swiper mySwiper shadow">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://s3-alpha-sig.figma.com/img/7993/92d0/3a7af6ee5df40b5f39ba08640f240450?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LBc3STfT2I-suAIZqW7iLMXEds0bfS3h1oOzSDa2wVmqVuYeEfLoXmvhiJliSHxrcg7ZrBiET4EHnt2ieNGIfgNDY-lQF0Pz0ibdjko7qLW5JOZHdbp9qViHlpDCFl7VmyV-VIGLt2OweSZPfWi3MBfx3Y0EiyWLgr477zQZhpkrtwAfhcVDr-wx5mybN91E-6SS-xdzSElqGPppfB6qUS3GLO0Q3sKRPZ8tMspmRcV9c1fuZhk16qX0ahYNn4P3Lt0~zAAWsuIwdlYtkA5jA8Gld9JPYsYdy7EUBn6dDQvbO8C~Cun1f2G6zKK1SFxcnhF~CrKNweHMr-2bLYob1Q__"
+                            alt="" style="width:100%">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://s3-alpha-sig.figma.com/img/7993/92d0/3a7af6ee5df40b5f39ba08640f240450?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LBc3STfT2I-suAIZqW7iLMXEds0bfS3h1oOzSDa2wVmqVuYeEfLoXmvhiJliSHxrcg7ZrBiET4EHnt2ieNGIfgNDY-lQF0Pz0ibdjko7qLW5JOZHdbp9qViHlpDCFl7VmyV-VIGLt2OweSZPfWi3MBfx3Y0EiyWLgr477zQZhpkrtwAfhcVDr-wx5mybN91E-6SS-xdzSElqGPppfB6qUS3GLO0Q3sKRPZ8tMspmRcV9c1fuZhk16qX0ahYNn4P3Lt0~zAAWsuIwdlYtkA5jA8Gld9JPYsYdy7EUBn6dDQvbO8C~Cun1f2G6zKK1SFxcnhF~CrKNweHMr-2bLYob1Q__"
+                            alt="" style="width:100%">
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://s3-alpha-sig.figma.com/img/7993/92d0/3a7af6ee5df40b5f39ba08640f240450?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LBc3STfT2I-suAIZqW7iLMXEds0bfS3h1oOzSDa2wVmqVuYeEfLoXmvhiJliSHxrcg7ZrBiET4EHnt2ieNGIfgNDY-lQF0Pz0ibdjko7qLW5JOZHdbp9qViHlpDCFl7VmyV-VIGLt2OweSZPfWi3MBfx3Y0EiyWLgr477zQZhpkrtwAfhcVDr-wx5mybN91E-6SS-xdzSElqGPppfB6qUS3GLO0Q3sKRPZ8tMspmRcV9c1fuZhk16qX0ahYNn4P3Lt0~zAAWsuIwdlYtkA5jA8Gld9JPYsYdy7EUBn6dDQvbO8C~Cun1f2G6zKK1SFxcnhF~CrKNweHMr-2bLYob1Q__"
+                            alt="" style="width:100%">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://s3-alpha-sig.figma.com/img/7993/92d0/3a7af6ee5df40b5f39ba08640f240450?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LBc3STfT2I-suAIZqW7iLMXEds0bfS3h1oOzSDa2wVmqVuYeEfLoXmvhiJliSHxrcg7ZrBiET4EHnt2ieNGIfgNDY-lQF0Pz0ibdjko7qLW5JOZHdbp9qViHlpDCFl7VmyV-VIGLt2OweSZPfWi3MBfx3Y0EiyWLgr477zQZhpkrtwAfhcVDr-wx5mybN91E-6SS-xdzSElqGPppfB6qUS3GLO0Q3sKRPZ8tMspmRcV9c1fuZhk16qX0ahYNn4P3Lt0~zAAWsuIwdlYtkA5jA8Gld9JPYsYdy7EUBn6dDQvbO8C~Cun1f2G6zKK1SFxcnhF~CrKNweHMr-2bLYob1Q__"
+                            alt="" style="width:100%">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://s3-alpha-sig.figma.com/img/7993/92d0/3a7af6ee5df40b5f39ba08640f240450?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LBc3STfT2I-suAIZqW7iLMXEds0bfS3h1oOzSDa2wVmqVuYeEfLoXmvhiJliSHxrcg7ZrBiET4EHnt2ieNGIfgNDY-lQF0Pz0ibdjko7qLW5JOZHdbp9qViHlpDCFl7VmyV-VIGLt2OweSZPfWi3MBfx3Y0EiyWLgr477zQZhpkrtwAfhcVDr-wx5mybN91E-6SS-xdzSElqGPppfB6qUS3GLO0Q3sKRPZ8tMspmRcV9c1fuZhk16qX0ahYNn4P3Lt0~zAAWsuIwdlYtkA5jA8Gld9JPYsYdy7EUBn6dDQvbO8C~Cun1f2G6zKK1SFxcnhF~CrKNweHMr-2bLYob1Q__"
+                            alt="" style="width:100%">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://s3-alpha-sig.figma.com/img/7993/92d0/3a7af6ee5df40b5f39ba08640f240450?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LBc3STfT2I-suAIZqW7iLMXEds0bfS3h1oOzSDa2wVmqVuYeEfLoXmvhiJliSHxrcg7ZrBiET4EHnt2ieNGIfgNDY-lQF0Pz0ibdjko7qLW5JOZHdbp9qViHlpDCFl7VmyV-VIGLt2OweSZPfWi3MBfx3Y0EiyWLgr477zQZhpkrtwAfhcVDr-wx5mybN91E-6SS-xdzSElqGPppfB6qUS3GLO0Q3sKRPZ8tMspmRcV9c1fuZhk16qX0ahYNn4P3Lt0~zAAWsuIwdlYtkA5jA8Gld9JPYsYdy7EUBn6dDQvbO8C~Cun1f2G6zKK1SFxcnhF~CrKNweHMr-2bLYob1Q__"
+                            alt="" style="width:100%">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- Swiper JS -->
+
+        <!-- start top section -->
+        <div class="row mt-5 pt-5">
+            <div class="col-md-3 col-sm-6 order-sm-1 col-12">
+                <div class="card mb-3">
+                    <div class="header-sec">
+                        <h2>The Top Toy List is here</h2>
+                        <span><a href="#">Shop now</a></span>
+                    </div>
+                    <img src="https://s3-alpha-sig.figma.com/img/ed0a/3929/4be0176203529f7cab98bd5561f6f77d?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KbGKcirED0f9DT9tnGulmnnkIu1iruyHNqrw3jF66zJyNQMOO9qdST~1nCkwtW2F5dGw8fCArL1bEV27x2T4rHXtdDEBosmuQCKG-AJNxu5SD4w1bqk7PXYt-kCZw3Diru-mdC8qtEkWQNTXlmIIKvyqhKtIF0uWxtaagJCRwCliZlyGUk47esUNr6U2sNOxhRxSaf2xQTAVEeigfVr3QDm~p7W2S1azOrT2oZcnNPvwmonPEi6kb1gk5QBwMsQavbD~2AEIviB8btX-Ek8~xdxfy3J9qCPFVp1oE1UVlHFNxi4cwtpAV73vOiQ9LTdnox5vuvAGmVwc5GP8XOEp5g__"
+                        alt="">
+                </div>
+
+                <div class="card mb-3">
+                    <div class="header-sec">
+                        <h1 class="ms-2">Only at Walmart — woohoo!</h1>
+                        <span><a href="#">Shop toys</a></span>
+                    </div>
+                    <img src="https://s3-alpha-sig.figma.com/img/755d/c14a/d0958acaa772bf6458fbf8ab8fb0054f?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EgJpA0QOA4L3xsPAZYpO9RVhYdnobt55pIQ2K-d9joaFnnTLSFHB7vbRRbj7Zp0o5ks2EMUtL~Rq23CZjPJMUcya7YKriUjC8iUUpkjTYKRiP4BYWnczjscPR-vCl18rOpUpOujP9eEmzRCc17ek6yJrwpiAeM2nFxEufOIttsJYZSKv1aBvWlqQZPSc5RfyCKvykHON59zG9ObjHrXhPt3w3i~fM--X9EcM987XNgcJGO-3yU4~ytyq4soXAAtk7lXimspUFNzA01DycSf~7RHyZw--Hmw~P0KL36Eb5DLb2dZH4xm8afc7RzTiqB3sbApSKejMZ2ObHtpx4-3n1g__"
+                        alt="">
+                </div>
+
+                <div class="card mb-3">
+                    <div class="header-sec">
+                        <h2 class="ms-2">Big fun for ages 5–7</h2>
+                        <span><a href="#">Shop now</a></span>
+                    </div>
+                    <img src="https://s3-alpha-sig.figma.com/img/ee02/0ec1/5b7dfc384150b4739004b0768b9d09dd?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YOTax61mRFiZzIxbk7v6ZMbIAnJKTbsqPF8KrMpbG31880ZDhfj9ha19Diz~qKxQcwKp4Y0p5r1qQhAa1-jbH3jKJXZeO6lauTgmdOX2S8l6oc~MX5Ag3lzJ1kYpvPw9lLP7y4rsUa1f9SCX4RDwmq~CfB7agZcAMZjlyl95nGIrogfP7aZRkjFCgxh7ojH6lOst~kWHSrzP7ve6bKPvc3t1hagGLteubwcWWfSyF3DsjyKzjdQoV4QOukbeC~DB~wFdxS9kil-Fua530l9O0T~sJlLvfy6T7fBeb~nxBQAekW66ilOlY15cH-Yf0EJK0a56cqcmYPcbDfCKZG34rA__"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 order-sm-3 col-12">
+                <div class="card mb-3">
+                    <div class="header-sec">
+                        <span class="ms-2 fs-1">New from Apple</span>
+                        <h1 class="mt-3 ms-2">Thinstant <br>
+                            classic.</h1><br><br>
+                        <span><a href="#" class="preorder">Preorder now</a></span>
+                    </div>
+                    <img src="https://s3-alpha-sig.figma.com/img/76a5/f94d/e6980af6d5948b31f7575f3a4fc057f5?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Bgh2CifRi5nbKJTAoQwXYNCE1tB6NEEBVEX3bO-GAcJx9Lun7r8mwru9lj4LIg8zkIgnBuaCp0p9cNvX-4owELiWRfRgkJ1TwKvNJcmZ4Utp3HIVYy~WKOYMTic2lCOcpRCdN0W0IdDAHg8fAqOdidI0L25isIrN2QuUhAw6RmdQR6y64iRrNOaWwFA4y8iIRZTcxH3LEKfRv-86Pv3BksGr4gMCLx7q1VwXwcLPRjXUUB-IZN-lExLkboIan2z~~5H8aQg0A8WfLin7eBFPGiQFVJn2evmJT4cDmpmqiKZQMmFQBM94g7rkjv-v4~cARQRaOhJ-n25YU38xs8VRFQ__"
+                        alt="">
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card mb-3">
+                            <div class="header-sec">
+                                <h2 class="ms-2">Owala: trending with every sip</h2>
+                                <span><a href="#">Shop now</a></span>
+                            </div>
+                            <img src="https://s3-alpha-sig.figma.com/img/c00b/289c/57e0f0bb2584f6fab084cfda2b9b3a6b?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dsjH79qPjJxjMvvLyvL63ZU1JxlPLIoYhcsEgAiscTP6WQdR2YEI8xC2i4BV3eTUcV1o9DYdTJPzvYfMTsI8aWj2x5jqZoMB5t4LWVA49JwAlq6dKIkIMFXgCtsPs8Bes2yVS-l7S1nlq~WuKyYV~y6J-eL6LdfdesRCzynAfKGKFNizqEoQyeEy2uxBkDx~o4lhF7W19ji7xfxYcQnLEIFY~86qbTVLQzBRicQqyNw~omV86CUA32vW2yjk1sR1AovXmf9T7lRxchqamv-rLl~VUEAEt~PD5kjjDZNDTd1XKAeAK-aVkAkPx2dChdrBYRlCzIokS2-pcwmZ~Vtmqw__"
+                                alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="card mb-3">
+                            <div class="header-sec">
+                                <h2 class="ms-2">Up to 40% off Shop now</h2>
+                                <span><a href="#">Shop now</a></span>
+                            </div>
+                            <img src="https://s3-alpha-sig.figma.com/img/cea1/ef39/c354dbb13db5e3dd3636effbfc952c20?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=op7UcllZDcZRf-hirtDlbfY5uLA7PQERNORltJpreDkDplCHHJ2lBbi0IyXm7ZBWqb0NZTnNx~vo3gEy8GntR~jThDI9Fw1fP8p8xeBfCEalElwGlZeQvjx2GfTxYYWZMIC6wJAt3STh7yFdZeOtHQAYe6NPM4rsPCLwAz15R32vBVO0A5Mu3prm~JAt3XW-Y~Bqq-MsZHSgyms2zYzPPVcKuCfVQlZutzmL4p1d9a4M3tlxNrwOiUXoYQGWocAONMGKiNvRa7VhxUOfIYhzVT5RY6qTzMw2sOwz9kdEpyQ7nhszjKANS~IeSGBbGeEvruqLtof392vgf-UUcVvRgQ__"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="header-sec mb-3">
+                        <h2 class="ms-">Walmart+ members save big <br> with
+                            free delivery from store</h2>
+                        <span><a href="#">Terms apply. <br>Join Walmart+</a></span>
+                    </div>
+                    <img src="https://s3-alpha-sig.figma.com/img/257d/3a8e/80932f28ca353f6523773acb71df7f60?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=exjydU-yiCIVKB8YGwPjV~syqjXGitQjoLoNEc5R2Ht7woDksCpyWEbGRa830Q-1hPvW-lwNYZVuttjJuoPFNe0LAAwxbpyD2omLbGOvL9CH9aMQQiq8Wn8yJgHuAZYL4TgxJxNrNDPzorSyv7PKrFfCxxufjINyDO8lgZfS0AzVaWg44ZgC~oaOFUEdfQDSdY~aoa6y9yLRoX~lVvFTbyNyaJfrbFPMNrtkvALigNIotIq5IaANEERg4TM-nEEkdh9hxorg9QmXpqdPpUPE0U5FFhaKe78VCakpifi2PKX6sCFnAzOx38-2nRhhqwXcRVb86NrTsSSP8AkbyCvZHQ__"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 order-sm-2 col-12">
+                <div class="card mb-3">
+                    <div class="header-sec">
+                        <h1 class="ms-2">Ree’s fashion refresh</h1>
+                        <span><a href="#">Shop now</a></span>
+                    </div>
+                    <img src="https://s3-alpha-sig.figma.com/img/bf24/680d/ea054047cac736077f32bbe9e4e56bef?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ArjjC-E8SoE6j0BNzlxqlsq3ioojD9y34-HBPqnY~rsAwBRGpALsVAf-w-gHp3c9VaeJhF7gjQ~K5RlIECQxX7znBD6xAgA92CR9JrJ6XGZADoi7kEkrdeDxz4raB7VIoWNqipiXQbqgUL-TezZEOUamX9lYvBB1WOS5tAsBG0P2iZtYHhmrOBotg0J7z7YtDxSPzUHSUqvd75lVxFH415RwdnJTJIB9PnQMYydzzPpgpHp-YVVdLCzhhUTZs6-vJMgs1wOnlcfErytYXucMsRRKr9BWcq1m2O8lUe~59MjaGa1KHYN0fizEdmcn8f9eCd7eHS97FLgudm2H0cevvg__"
+                        alt="">
+                </div>
+
+                <div class="card mb-3">
+                    <div class="header-sec">
+                        <h1 class="ms-2">Latest luxe beauty lineup</h1>
+                        <span><a href="#">Shop now</a></span>
+                    </div>
+                    <img src="https://s3-alpha-sig.figma.com/img/620e/0d4a/ecf7d0258e88531aa298ac310089495a?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=It~-DC8BosvzhCxYAPY1bNfrFP5J-PIHAxaqrpijIlrnF4~Y1asxpvvQM3eG43eXhUTSBqdZ55ZBJR3N6QdFSgSj8xO7S5ZLl88lJRkx2~qgsxNu04YQGXTbNQbvb22OIybGdfwfkyn3EOhYUHs4hPwmp1DGGtyDgD~7GdQofCzUynpkz32k81pKln1lk7~rGu1ChaoQwbRPHm6QKJ92YLsp4~YSXD-fAr8Zg0Q-yIO~cDe756FgTMUAw0ETetEY83gW7qa9vQTt8leBMH1RpxAADmChZ33zQPNt7IDqbJpggFGB~J4fuMHCtXfld~H5BFz7O4hVLaLf0j82zpyWIA__"
+                        alt="">
+                </div>
+
+                <div class="card mb-3">
+                    <div class="header-sec">
+                        <h1>Just-dropped Beats</h1>
+                        <span><a href="#">Shop now</a></span>
+                    </div>
+                    <img src="https://s3-alpha-sig.figma.com/img/2c53/6abf/b0eeb4c5f66e00ede7b5214ed8eb7649?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Es2FEFiEeGfDJSIL~YwAeaYEOq5KimgYe-EK8pXaPoSmH9aXyh0tpTeGxy9wta6CwEmM7fuar8sninxOHKCqe3LXxWisHCeMelbMDRDduaF5RtjkXSl3O-z6uoiwBKru6NR69DUR5wSJaJnKCJlARnhBaWJMKFoyJvHGNT5Dpch6j4bsltqZAU7QhSyEfbL1cNSEoeGJGaEMpUIpKQmDOF7X9orWIkTzhj~vYv8ZDmPZ1ws~~WBqLZQcjmigVXRel6-8LobcHRMD1LVGkeKoN4p1Ym7ebpcDlJN04jw1epS7Hrs2ZWySWYkEpyKNST8C~K9wgEMZSf~GtI8Ev8UL5w__"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <!-- start top section -->
+
+        <!-- start flash deals section -->
+        <div class="row mt-5">
+            <div class="Flash-deals">
+                <div>
+                    <h3>Flash Deals</h3>
+                    <span>Up to 65% off</span>
+                </div>
+                <div>
+                    <a href="#">View all</a>
+                </div>
+            </div>
+
+            <!-- start  carousel section -->
+            <div class="owl-carousel owl-theme owl-carousel-2 mt-5">
+                <!-- item-1 -->
+                <div class="item pb-5">
+                    <div class="header-icon position-relative">
+
+                        <img src="https://s3-alpha-sig.figma.com/img/ba2e/25de/4c97c0e9447713dd5091a83f785274e3?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TI4lIeDTUM2r9smkLxDZsdbaRB3Z11Fgb78bZRNjKeOAxm6XZUKGHovWnSg0W6qE2TTVqKaJu-tMLRpjxrCe4M248ZsRqkE7ZOxADph1OJtUUNcEWwEE82KAr2Vh12IqX~CCs~uhFJSL7X5ADedTtQ7FSjk~qplCYCkFlYKx5WSpruQYNFPUiuVTlDTEwA10OGgsP-Cbbzowy3E4WaJycAro9KyctxmMShPowbUUVXhe6wtScD3LGJNtSOnqmRzRF8Q3QL6KHJj3B4cFEVkSJksYRs1bNhBDs5bMNmrQvjeQcW22DyQ966-3VereB4CqiSAFr2QpcVzx3oleEJJ5sg__"
+                            alt="">
+                    </div>
+                    <div class="price-section mt-3">
+                        <h4>$000</h4>
+                        <span>Options from $000 – $000</span>
+                        <p>Travelhouse 3 Piece Hardshell Luggage Set Hardside Lightweight Suitcase with TSA Lock Spinner
+                            Wheels 20in24in28in.(Blue)</p>
+                        <span><a href="#">Add to cart</a></span>
+                    </div>
+                </div>
+
+                <!-- item-2 -->
+                <div class="item">
+                    <div class="header-icon position-relative">
+                        <span>
+                            <button type="button" class="position-absolute">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </span>
+                        <img src="https://s3-alpha-sig.figma.com/img/6586/8f05/38328f3a3df850ae3f56b28841212e2e?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=B0XcFBUezV-7Idi7xQdcFJpKKUrlYl~VoRq783AG5K8vSWazYtB7QJdhD1NwV-1qPcgFaTV5Kjknces8Daxs2HrAABs0DOSrqttVZmHGDul44Wz~Y5Q06TpB8bu8bI8v5ZX2cFZJiD4OIVjkjbciQeOX40Uw0Hv70~abJdH3WgqOEaTI6HUp3gCM2JzveoeM3wW3EcJTPEXqE3YM7uWN6oHXoTyxLjBRumobiryYYqkuJhVVAH7u24M1cUotHjPlHRAI85Z3itYWmgiKb5boDajS9YKABwjUHpRvGX8t4XSzP5L3Iko7sek3fzz1q9CA35pWF2-TTQR5eDHZJZj5fg__"
+                            alt="">
+                    </div>
+                    <div class="price-section mt-3">
+                        <h4>$000</h4>
+                        <span>Options from $000 – $000</span>
+                        <p>Travelhouse 3 Piece Hardshell Luggage Set Hardside Lightweight Suitcase with TSA Lock Spinner
+                            Wheels 20in24in28in.(Blue)</p>
+                        <span><a href="#">Add to cart</a></span>
+                    </div>
+                </div>
+
+                <!-- item-3 -->
+                <div class="item">
+                    <div class="header-icon position-relative">
+                        <span>
+                            <button type="button" class="position-absolute">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </span>
+                        <img src="https://s3-alpha-sig.figma.com/img/8c4c/7f17/228659be8a2c67ba3e5dae5bd3edb7dd?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cS0KB2XiUWCEgV0jBeEtsAaUTeZxWTaFKHm87Ruk~UJz80LmOscHsVu-PLLXNTWrz-2vxHgRcWUMBkHKBjiPWz2zBAe0jfIgkULxjn26peDePQgbOPMt3WXVtvxZEGZkdm2yoQAs8G3L0EnhfpOhfxb6TTkcqc3yQYYGoWIwvrJkMS8dcezD-EqUqoRlIiYGck0ckNKLRJqUhSdHmKn5WRJAgY4d490JC1SZDo2NL~PHeqTEauFplJB1xwnnGQeA4oOjXAiteQ1FjiAIM0IBdfWgXMici1GLhML~FFwY6NCWVm99R0QJQBNvMPjyEN7uMDNirU2NwL5W~3kAFCIZfg__"
+                            alt="">
+                    </div>
+                    <div class="price-section mt-3">
+                        <h4>$000</h4>
+                        <span>Options from $000 – $000</span>
+                        <p>Travelhouse 3 Piece Hardshell Luggage Set Hardside Lightweight Suitcase with TSA Lock Spinner
+                            Wheels 20in24in28in.(Blue)</p>
+                        <span><a href="#">Add to cart</a></span>
+                    </div>
+                </div>
+
+                <!-- item-4 -->
+                <div class="item">
+                    <div class="header-icon position-relative">
+                        <span>
+                            <button type="button" class="position-absolute">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </span>
+                        <img src="https://s3-alpha-sig.figma.com/img/4a3e/8a21/80f7d1f34d8363ae2358bcad971395e5?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WJNKefXoLolwQJQsDVK2Ot2k-K~XQuSQr6~QFrNUM2-BcaLFiHOblOcntA2yXOZRbi2As-6CVa6LKO~BIA~nX02aCxclEhhU3qLpb2Wm9gwRSA7eT7HrJFakWH9veRrtUce9wZq34NVT3OPov7wH0YJbTdMcLKw-B5q8BXtPEFgCN-pSCh4ND-R~zDEQ3mbhOkWuF5xHHUlD5PvTprupb3aErmAN~DNMULrcGNHibQq2d0dhwLPeN0UOdtFjp7Yw-6vc1q-UrJmQolyDhad8UxbunMPHlJdFzKblka~ZVx19w~vYL8dD0F-aHXZs8ex4cz6W3~hPd0aHwdLZklQyrQ__"
+                            alt="">
+                    </div>
+                    <div class="price-section mt-3">
+                        <h4>$000</h4>
+                        <span>Options from $000 – $000</span>
+                        <p>Travelhouse 3 Piece Hardshell Luggage Set Hardside Lightweight Suitcase with TSA Lock Spinner
+                            Wheels 20in24in28in.(Blue)</p>
+                        <span><a href="#">Add to cart</a></span>
+                    </div>
+                </div>
+
+                <!-- item-5 -->
+                <div class="item">
+                    <div class="header-icon position-relative">
+                        <span>
+                            <button type="button" class="position-absolute">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </span>
+                        <img src="https://s3-alpha-sig.figma.com/img/cc79/c687/bfe5c58e6e9d505d04230d7da5f1cb94?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DUw6jCTk4wlAOuB-HP-71Ii7tiROe949JOwu-MnyFXHQDHHZPIFPYYmE1fE-FnDSyZsbWNjUGxXY0F8mtwyiKgNjo5UcgMWf1LR8X7XkIoOswBd82jnvSLxjklB50Wb9haFa2Sa2BIuK3uByVlFp-dr6udztcOKo1XiuY-JDcttLsDTfGVtaHEVVZ3kcsMB1wRWyTCrSYD71B19BML8YhwQYdhx-A1l43zwm9A0-HdmDQFSHml1RK8YWYapd3JfSl11JaHVDs8LVnY1MUEZgkNPQ4jhIa4dO73L86DzDpBXq8CEiEZ9jlOGCxu7N4ZD1gYGocHKoMBUwzNpGD9b3Eg__"
+                            alt="">
+                    </div>
+                    <div class="price-section mt-3">
+                        <h4>$000</h4>
+                        <span>Options from $000 – $000</span>
+                        <p>Travelhouse 3 Piece Hardshell Luggage Set Hardside Lightweight Suitcase with TSA Lock Spinner
+                            Wheels 20in24in28in.(Blue)</p>
+                        <span><a href="#">Add to cart</a></span>
+                    </div>
+                </div>
+
+                <!-- item-6 -->
+                <div class="item">
+                    <div class="header-icon position-relative">
+                        <span>
+                            <button type="button" class="position-absolute">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </span>
+                        <img src="https://i5.walmartimages.com/asr/76d44f1c-89bd-41ab-ae13-8c78567b1268.12843cefdedbfe37c00fbc653f73946a.jpeg?odnHeight=175&odnWidth=175&odnBg=FFFFFF"
+                            alt="">
+                    </div>
+                    <div class="price-section mt-3">
+                        <h4>$000</h4>
+                        <span>Options from $000 – $000</span>
+                        <p>Travelhouse 3 Piece Hardshell Luggage Set Hardside Lightweight Suitcase with TSA Lock Spinner
+                            Wheels 20in24in28in.(Blue)</p>
+                        <span><a href="#">Add to cart</a></span>
+                    </div>
+                </div>
+
+                <!-- item-7 -->
+                <div class="item">
+                    <div class="header-icon position-relative">
+                        <span>
+                            <button type="button" class="position-absolute">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </span>
+                        <img src="https://i5.walmartimages.com/asr/999f8ecf-b6d4-47af-8e7f-383a13523089.81e98144241cc6424a4a895e6e4e7e29.png?odnHeight=175&odnWidth=175&odnBg=FFFFFF"
+                            alt="">
+                    </div>
+                    <div class="price-section mt-3">
+                        <h4>$000</h4>
+                        <span>Options from $000 – $000</span>
+                        <p>Travelhouse 3 Piece Hardshell Luggage Set Hardside Lightweight Suitcase with TSA Lock Spinner
+                            Wheels 20in24in28in.(Blue)</p>
+                        <span><a href="#">Add to cart</a></span>
+                    </div>
+                </div>
+
+                <!-- item-8 -->
+                <div class="item">
+                    <div class="header-icon position-relative">
+                        <span>
+                            <button type="button" class="position-absolute">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </span>
+                        <img src="https://i5.walmartimages.com/seo/Fantaslook-Plaid-Flannel-Shirts-for-Women-Oversized-Long-Sleeve-Button-Down-Shirts-Blouses-Tops_0a9a3740-d4be-4f1b-adc9-5f191bf76b13.4acc5931acf62093134b18c0fc46a23b.jpeg?odnHeight=175&odnWidth=175&odnBg=FFFFFF"
+                            alt="">
+                    </div>
+                    <div class="price-section mt-3">
+                        <h4>$000</h4>
+                        <span>Options from $000 – $000</span>
+                        <p>Travelhouse 3 Piece Hardshell Luggage Set Hardside Lightweight Suitcase with TSA Lock Spinner
+                            Wheels 20in24in28in.(Blue)</p>
+                        <span><a href="#">Add to cart</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End  carousel section -->
+
+        <!-- start festive section -->
+        <div class="row mt-5">
+            <div class="col-md-4 Festive-fashion">
+                <div class="card boder-0 p-5 ff">
+                    <div class="d-flex justify-content-between">
+                        <h3>Festive Fashion</h3>
+                        <span><a href="#">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a></span>
+                    </div>
+                    <div class="row mt-5 Festive-item">
+                        <div class="col-md-6 col-6">
+                            <div class="card mb-3 p-3">
+                                <img src="https://s3-alpha-sig.figma.com/img/ee72/bc9b/97d2c798ff44cd5759b75d6a01bcc259?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cWohKJqhpq5tMcukhNvFAeO5ZI3n0YJPS8HsdmI5iyEnYxtyfQzKSCbsJjdaqIe7OoesDKXjggBciO49uTnvF86yk9hL5AfPmWeYvQw-pGAyBA1yfUjwSompRH3Hm8mS33qicPMOU7G7EN4NHiGOjzjcBJVTBzt0h0zG7bVJ66WiOJVQZb1K-MAHjtsusxED4HryvOvjjZqw9dtSEu5IO5HI70zDY54j9YzIFubSoATjuBZt25FvwZaABf0ryTKZeudyeKUYfqlEgOP96t-m~d1PwGy54GYHrzgMOqxmfHAVI4qT5Gw2Zdf149nteWYejt1hvnoUa~vN-kWCU1MOIw__"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Men's Kurtas</h5>
+                                        <span>Special offer</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 p-3">
+                                <img src="https://s3-alpha-sig.figma.com/img/6ee8/a808/1cf6e479535d1b43f9f2f1de7e8bc443?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=h0yhieo-Ej8NvXV3jjTOsfKMoZNcylEnVCeMYpcoKy4j-ItVUu~-dHesRdqhNHjDAqMUDBGIQCpwXiSlxAfCc-50QUxbQ7LB5wzu359WeuNkSv~nLLnwt21wDaMjDwO1ukw70vEx8k-FeE5hbq3KbesMALoP4AKWWJBpTZrWEiR9HDrxFp1-3nt7vRtqzvVxQL2NE-~360-MTANsk54V5mUzoZMsgYPYCeMqIQBD2LzurcuVFBnSbiJIEjeG7RtPMXxNZeu6I09oavuQ60WGvqDzirIpbfTOEnQn3vsvr0KXFw5liLRhPDGLR~eQceLK4oheJ-qZj32NyGoscc6XGw__"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Men's Kurtas</h5>
+                                        <span>Special offer</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-6">
+                            <div class="card mb-3 p-3">
+                                <img src="https://s3-alpha-sig.figma.com/img/2510/c164/7dd537087b7bd2781488a80085be995a?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i6-IQR7DzJnGg85TmtPckWqUs8icL~oDIvgSjwFWZuB09d9mWy0L-MTm2WlQY1vPQ9BFHgcuQsPGo9wG4rRvvl7PEmBv1rrtEGw2aeYR0BGFWkjMxz-w5Ol1v0LQb2R-yARft2i5wVRCWEmjjWe6VwFXj3PUBmWoddamv2Ou3vEvikXEC6oh~e9Onw0agxswpHBJaduZSc20rKeI91MdES6gSnerdT54LyNVAI7vgeDhZS0jAYP0j2Hzuyv~6JRuq0h-bKQp-zFhPK7xr~RiqtK6yxBc~5DvUiCCpDsIoo-EbMCLvM7k7W2XuawQBGvWaTYCGIFq68QdYTjX9tQrvA__"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Men's Kurtas</h5>
+                                        <span>Special offer</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 p-3">
+                                <img src="https://s3-alpha-sig.figma.com/img/1466/80e8/13a90741d0c46fa75ba6a839c29413a2?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CCT-iMxZUR8GsbIBAYyJu9HfdTt-LtrEgY4ux9mEOwI2hmzEXJ1fjvtm85lyTOFfQ-xOqLkqpW1iqx2GsTeC~P31NO5UWQUO0cMV24vsiTRyOLuOaGil09qfQYanZYLBYFVtqV391y3ISyIB4m4dCe8DHhymlSEr9tsqTo02JaZ45rPQGbEJj066QIi4w4RABgKdIzPRoWMPgihAIo6SeZb7HYLjsKQDdA66XCOoTGv6qPZkP9oNh2JL25ExcukGZESAncoK8yfs3Z469skn~rAmrcsuxdqN4bFTylcw1JL3aPkRpqZztLHMBgVuKMruFoGAVTTSD2f4p84zc~eMLw__"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Men's Kurtas</h5>
+                                        <span>Special offer</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- end festive section -->
+
+            <!--start Toys & Stationery section -->
+            <div class="col-md-4 Festive-fashion">
+                <div class="card boder-0 p-5">
+                    <div class="d-flex justify-content-between">
+                        <h3>Toys & Stationery For All Ages</h3>
+                        <span><a href="#">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a></span>
+                    </div>
+                    <div class="row mt-5 Festive-item">
+                        <div class="col-md-6 col-6">
+                            <div class="card mb-3 p-3">
+                                <img src="https://s3-alpha-sig.figma.com/img/ce40/aa23/5e8b995384cb061d5716f76dfb376e99?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mO6-5jRZAgGguwbuE-WaMa7HBOYrxJmEluzTW6aSoJwlQPUgq4yISfML~uB04ttQTdwfYygDBz3yux6O1k0xhDVZEi~fQEqJp5WmojiI4muVFwIAoff1AZfBZC43EOrSsNY8dEaXz~FC62ER~rCykM33s3767af0YxlJwACyCQZmGr4BRVaT5d7su6jnac3EjWIAPAMaN-eU57QQzOZicYTkGOqLof3dKoNlFeRXaTCVKRF7oAwm7-soTyimz1hdi7NS7zY31wLngEE~16kOGYExDQtD34WXkw3oxZEmtBsWu39s7zb6UaLb5xBpwF5-czKTZWyuCNWAMdhvSPr9pA__"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Remote Control Toy</h5>
+                                        <span>Min 50% off</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 p-3">
+                                <img src="https://s3-alpha-sig.figma.com/img/aff2/563e/211ea56c32aa7e72b20901a93d424e29?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dVycZxTrxYBVwywKuXcJPYAgCvBYJ4mBREAezIjDTY~D5Wx2CfjpAtnb0Llc-kykFdamEWjHk5UooHcpMb1DqRaAVhSSyVstZloKoHw3Cm6KE0qy60BjYJoH9u9DqPlJ07bm7BioYg5G6~oAd75vWcZFZpD7BAXE4yrM0faiDaZP1zZzMyFuSUn5j2rQQk~vEfH-Q5CthGDVb2QmqivynoNx-jfktEmIoM2ZdrOT~85-4c-6cwnPoZjdqMbGgicAk44g4~Tt7CcfdjpcLrxdoQPOw1rZeCqFjRHOaFQXMg4bfDnTWO0MPmsababMsTQY1N3P3ysubkQ9qYzcEJF9Hg__"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">School Bags</h5>
+                                        <span>Min 50% off</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-6">
+                            <div class="card mb-3 p-3">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/l41n2q80/hair-dryer/c/x/9/-original-imagff88dk6ygvrk.jpeg?q=70"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Hair Dryers</h5>
+                                        <span>Min 50% off</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 p-3">
+                                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/dslr-camera/d/6/t/-original-imah4svhmrdyhmhz.jpeg?q=70"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Sony Camera</h5>
+                                        <span>Min 50% off</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--end Toys & Stationery section -->
+
+            <!-- start Best Gadgets & Appliances -->
+            <div class="col-md-4 Festive-fashion">
+                <div class="card boder-0 p-5">
+                    <div class="d-flex justify-content-between">
+                        <h3>Best Gadgets & Appliances</h3>
+                        <span><a href="#">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a></span>
+                    </div>
+                    <div class="row mt-5 Festive-item">
+                        <div class="col-md-6 col-6">
+                            <div class="card mb-3 p-3">
+                                <img src="https://s3-alpha-sig.figma.com/img/b02e/2399/4475dd9e8fb87900d840b5af64cd020a?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=B-3x8a2v1B~6mfdOFHUxkc8KCOvqS20ydKX4e~lHNeXXEUHeY9IDFT28C0F1cJM41losjU39CBSIRFgmMIUfN7UNTAJdl1DCqH~xRMdyhK~EaYBin-Vk3TjrsqCd9Ls2CLv3R8WvXMyty~rdiLtMENweQ3Memci49R6iN-xNw7XQNtupLipNfyqUmmb96GQD1kKJrmsG2DQb9cUX1kNlbuSmMmtY~-e7mTzbxZoCXOss1FmJ9rGflf4kcKimLFkU2HYle2yCkJkRtSan5Towo-t7Rthtjkl-MvSJfYr4hiQgdi22scG3YtMb~-8lYhkzqcGKntcmwPSvr5c9SibrRA__"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Headset</h5>
+                                        <span>Min 50% off</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 p-3">
+                                <img src="https://s3-alpha-sig.figma.com/img/2b6b/b5a9/e436944e9127488a34f5e7665d61ae42?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=G7-d9unu5b0MTIhA9ebVA-w~FQk~E3ZcZaYXWvm2sa8VQo49TL0REkx6L48fAfSAClBjJtil0Pa92WdehXb3zQuNSjP0af75B05y4a4WhN36h741jF1JOOFUqDYuTYDRX5M7uIy3IwqwgeEJFKSLCCpVfnvGCNYsRrZjjHli-Z8p69IEkOs78TystUs9IZP8CWGvLZXfLpecmxD6qyJe6DfKWZUmN4S4VBeFo0euSU3uxUbuUT1utusnqLvAHK7rGfgTe9unURYCw8rm7YLstE21RrNvoUYMohBATAIQc7e-ix~NVIzd1T56jvFPEwhHVWZd3Fw2CqJPk1~rE2b3tQ__"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Smart watches</h5>
+                                        <span>Min 40% off</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-6">
+                            <div class="card mb-3 p-3">
+                                <img src="https://s3-alpha-sig.figma.com/img/9d52/c676/01e4bb64f68a96f899e91d677de1d860?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HtoQia1hXsvWI9D9PlF42A5Tym6y3x7gu0uG7QpGHXDs40~bgV7fbQvFFz7sM1AzD71gtW1KQUGu-pgSUUPRFUQc4vRJuaiIpSM1IhZVGNJ75TVmicEtZPLVntAqcDc3vbcwAeg9I3vPYe3g04FzjDLis-vtz9iErKM3Gbt4n1EbtjeG7zTB2TfT-8Aig-8zmebHzwvB4XNxUTL4k7kpedexnRkHQrD3KzwwPO0KERBN~d59h1CfaUGs8E-dmgus4uzW1eFC36ZZWWTjR5REYJ8o1ySAPM56B8m4JnVVLkqvB7dXVR7ASmXcufbO1Xhhnbc07bMeDijaIjrgA4OQFQ__"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Home Audio</h5>
+                                        <span>New Collection</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 p-3">
+                                <img src="https://s3-alpha-sig.figma.com/img/5060/74df/496b4f0e7c9a79156bf74c9120266d3b?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OCa4f2ITPvBfBFEbQj7SFlMMy23TmiCuCmeNVM5rDJ5BJhmsNedH1y00xo2nkl4u6Z3-w5Kadz-drBkBMJy3N66aHqPcG92ghhmUZZy8EVGYJwn2v5YEKjOxA~UXmcZeMwfK8GD7HQCzJqmWvXEGjLkUfR22YMDUxpTTM6ZCHMfPmispZGw-uKzmSJpEdOWOMwESChfCWrjhQ0b6JukQrTuvqBb19fSIST5fBRoOhn~BiJtSSdztSFuIwaCJhIT9cJVP8FJ12sxTNrkbFlidw0N21Jp0JZy1M7M~NZo~I161aMHcgzrMww6tzhpplleET3MjpsT7K8Fq0cf6DdPvXQ__"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Smart Lighting</h5>
+                                        <span>Special offer</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Best Gadgets & Appliances-->
+
+        <!-- start fall style manifested -->
+        <div class="row mt-5">
+            <div class="col-md-5 col-sm-6 oder-sm-3 pb-3">
+                <div class="card ">
+                    <div class="header-sec">
+                        <h1 class="mt-3 ms-2">Fall style,<br> manifested<br>
+                            Shop trends
+                            classic.</h1>
+                        <span><a href="#" class="ms-5">Shop trends</a></span>
+                    </div>
+                    <img src="https://s3-alpha-sig.figma.com/img/b367/b3c1/01c94ff3cc1491ad06e41143b63b3165?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LOY2LF9U1e4Nx8O6vLblJ2zfATwG6BKwzoixNfx5DpHgUT9~TCxp773uFfVKZE5PQY-dEEDVfzKiC1OiE8P3iYEao-OmOdJvBoD9CD4JA2yiTFJDRPPJe3lb6XRHtXPEVxjiWTKTX7lb7qqNjirZchEDNLTLM4QyyZPkjRQPxULO2PX1aXkMw~zhaKGyDXPG3ddpocum-zhN8zYoAzdaWgXNWfHtjG4G3gtA~psTqdJCK-yeNsu423KL7Emz8VRkQyf3Few~P9S38ycr8qW283KkCPFxaVSRQBZ5HpDbX4kduwWuWH8Qlg2B8IkCbkBZ5KCIg08l7oqeyxT4-KlzpA__"
+                        alt="" class="im-f">
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 order-sm-3 col-sm">
+                <div class="card">
+                    <div class="header-sec">
+                        <span class="fs-3">Denim on denim</span>
+                        <h2 class="mt-3 ms-1">
+                            Epitome of<br>
+                            effortless cool</h2>
+                        <span><a href="#" class="ms-2">Shop now</a></span>
+                    </div>
+                    <img src="https://s3-alpha-sig.figma.com/img/4b11/f993/13759e07b697cbf0c107fd89096dbfcb?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MF6uZm79lv8Ox0xIR9DRoQPonFjVhvWzeWb6dGwNWyD0Wo3TXeXN3IUsissD5KJGcpCWLb9Gfl7RCvKfPx4~4KwVwithh7fg6Q~3exjLcqT6qDJc~MHvV6sQ42mRtdFf~p5hN3wZZ7GNRoyixJfhPWfh-My6GOMP3Gyc0ndXX-xaQ5X8UTUEiNOgtzL5jUSIom2Z0Kvpty47RaYbc7uGVwTd1UWNIft-d3fi5xYmXcScY3D6D9k6AXC1AKQ~g4CNTgAKzpwAVezLwolAO9QwAp1HxiAqRYaCM3eNuwazgcG5bvawmS7IWhAyr8kGX37e7fhMwSwYw4Npw0S5YsL0yA__"
+                        alt="">
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-6 col-sm-6 pb-3">
+                        <div class="card">
+                            <div class="header-sec text-light">
+                                <h3 class=" ms-1">Elevated<br>
+                                    essentials</h3>
+                                <span><a href="#" class=" text-light">Shop Fashion</a></span>
+                            </div>
+
+                            <img src="https://s3-alpha-sig.figma.com/img/c1b2/ed22/abb6291bb438b3ec3f2f7375472483d6?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dbWyViJYjQJYJl1GHuvZYxmSG3kJkjB-VoCOlnJgU6BC6aKxHdGQOMZbX8Q57vuuXYUPVMS4NnfbxDHV52LKlODMUnypuXJB9PkRNVHcMZ7j05HI3p75YO2Alw8~CgeBVUIS39ws0uRMsR9w7wFCR7CXPbGCVG6yq-8B4Fq4wllem0FADLR6Tdy9YMjpf9DrpgmyQD7eSpiWFdJcRXEquAaH13PGLXHoEWVHTvQyELhnOoJG83N1KXzJZZZdimJc4fuvnhj~0gVLXxhFjh77VZEteVbxB3wwyYv-MXLdaW~wjLh6a-cGwi2w9NgIlhyvwkOuz3jEAbLgzVu96XYGmA__"
+                                alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 pb-3">
+                        <div class="card">
+                            <div class="header-sec">
+                                <h3 class="ms-1">Shades of red</h3>
+                                <span><a href="#">Shop now</a></span>
+                            </div>
+
+                            <img src="https://s3-alpha-sig.figma.com/img/cc0f/e5c2/8bd5d428a932882b294ca0833dda630f?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ljPVT1nZ0OaAQA6~X3qXX5u6wI4Qipr3MSdbRqxZ~yAeM0sn~Pq1yKfyoYSelJJcdxh5fSJRr-NmkwMJDvCMYOIX3DPXwu2rkImg-HOGgCgW3KMCzpDvuj0EbQhfhEHfOLmMYWkdYCRW4G-wHXNhc48TO5pdDfsxajbzF4AJ98Ui4XsXiS3kudz4HmIcEF01r--GeBt5dinLa0tYfRhgC6OAExVfRUEXmaoz3R8xie8mN8ssCPI3VuWcYNfIec0EwnH5fFfmirfChO15hdjsT2fPxGSqYcLQndvkqxaJYUJmrFmZAaPkorhmk3Bp~kHDSgrbTYcf2gPA4k22t1tn9g__"
+                                alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 order-sm-1 pb-3">
+                <div class="card">
+                    <div class="header-sec">
+                        <span class="fs-3">Your new uniform</span>
+                        <h2 class="mt-3 ms-1">Utility chic: fashion<br>meets function</h2>
+                        <span><a href="#" class="ms-2">Shop now</a></span>
+                    </div>
+                    <img src="https://s3-alpha-sig.figma.com/img/7017/2f6c/31c75ef9ce0d9836d8514434757e305d?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kBaJM25kuD7yLU3QQTZtTLria1xuxUDWyTK79xoorNxwKq2QzYB45kmRARP0idxLryhYBnFgk5RBRp8ytwBSMFpyLNd1U55lBy126uYVCmEJ04vHcNQRjQA43t9ZXhWYqoxkY9k6rJqNPlpcegnKayrWUBkcmHnn3eWzRgdNc21aWhOrAzpEIoxZFrQ-VJOalr1q4~jx331uZeAT5y61zRxmP-hhnCLK4g5VAnhifnZipZmFfPKpMRuG2rCNlWU1RDo4BBzyNwRnrLccMToGpkbFY34-XTzxFujk62xqDqwUjADlZmPYrqoiwc9fWszAyuJBJ1W~fJsNcSfFAU8fBg__"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <!-- end fall style manifested -->
+
+        <!-- start explore new style -->
+        <div class="row mt-5">
+            <div class="col-md-4 Festive-fashion">
+                <div class="card boder-0 p-5">
+                    <div class="d-flex justify-content-between">
+                        <h3>Explore New Styles</h3>
+                        <span><a href="#">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a></span>
+                    </div>
+                    <div class="row mt-5 Festive-item">
+                        <div class="col-md-6 col-6">
+                            <div class="card mb-3 p-3">
+                                <img src="https://s3-alpha-sig.figma.com/img/ee72/bc9b/97d2c798ff44cd5759b75d6a01bcc259?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cWohKJqhpq5tMcukhNvFAeO5ZI3n0YJPS8HsdmI5iyEnYxtyfQzKSCbsJjdaqIe7OoesDKXjggBciO49uTnvF86yk9hL5AfPmWeYvQw-pGAyBA1yfUjwSompRH3Hm8mS33qicPMOU7G7EN4NHiGOjzjcBJVTBzt0h0zG7bVJ66WiOJVQZb1K-MAHjtsusxED4HryvOvjjZqw9dtSEu5IO5HI70zDY54j9YzIFubSoATjuBZt25FvwZaABf0ryTKZeudyeKUYfqlEgOP96t-m~d1PwGy54GYHrzgMOqxmfHAVI4qT5Gw2Zdf149nteWYejt1hvnoUa~vN-kWCU1MOIw__"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Dry Fruit, Nut & Seed</h5>
+                                        <span>Min 50% off</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 p-3">
+                                <img src="https://s3-alpha-sig.figma.com/img/f168/389b/2ed4aec65b14af25a46ca07d27f7e2c7?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TbJkK-6TUsfOw2~raiWGYDnx5Koz3~piCqZL5wv0MXc8N2dyPnHNTYm4dwJTFEoGy~NZXqDqrlxaevXFI3tJQRrM7ko3zAOsuS7uw0RvzzeDr1DJ6gluzQU5iUokpSKUV7qpt9Wm0Fpj5KhOmm1HZHiXNPgN8c41paxAf5p4F0~YixLqsm2yYJpWQimqoE1p97fa58CMg5ww-Q1QmNkilw6nCRCNbq~FJoP3iD3~a7ak539cI3v4NM~elueYXyYyBn8wv7r7jSe7AfWp1rnDAD3dERNtNNdnjYq-7MkAWGv~66j5WdW0ruw8p52~4ILs4NOxNLPLHhsUe-wmSJYkuA__"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Chains</h5>
+                                        <span>Min 70% off</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-6">
+                            <div class="card mb-3 p-3">
+                                <img src="https://s3-alpha-sig.figma.com/img/1c61/22ef/adc25fef2aee1924312e77d13ee176a4?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fJMjfd5WjumPxduFCGZ5MqGqNjAKDfrkXoTVl2z69MpyiUoAE3S~zc5ZZ8M9QJDM0eRbOGxxU-faHVjJHQ0EQF58kyXl4HANfVE80s2RHOep8eYWIaSPZOX9NgDGXS6~kDhIpApU-WCnw~E46cxa7gzp08Uqb7tC1O-KrGVVbx9Y7mtrKxayhIcIy5Ap2I4v~dC76nd8NaBziSYHTJCuRBHJBce00g6tBNNhLktVgxLkxHw0Y0MBmPLhGRDREgry9o9UH6~SqW95adBB9A7WvZd5Wkh1eLlSQHTEVnbvIwpBnu8JWkWsVfTD6mPWzf0HUQyFTFAgOpq3qP~TAhfi5A__"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Bangles Bracelets & Arm</h5>
+                                        <span>Min 70% off</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 p-3">
+                                <img src="https://s3-alpha-sig.figma.com/img/160e/cea2/793de896f0d2ad8d5edd706da34f7b6c?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dJZO2fTpEIGzEzx5u-WYjHDUYw~jukOCFD-DH1PcjX4vhwpH93IVC3~Sa98doSbnOalDVzQQeANNKeu75qJzYjacQOnnSldKCgUbPyWPcIANFS5nG0rKr23b3mqgoCM07tj75kWJs~ACPWVTmS3n5zRDsdn4o-hjiYd5JyxHXW-EBa8x~gra8S~u5YHLz7g2qws39HgyqLHOpNnUQLfQsNKMFjmDjXZaUC0~-8H6qrV5rlxT5ExHXQZg2cHExkgF~UGYBYS~wRuyGhy-4EmSeSROThQ3Y5yoYDX2H3eZIkRG5vrHB~3d7A-FTXftmqTiL4P3fHzItrq5uSMk6XUnFA__"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Sling Bags</h5>
+                                        <span>Min 70% off</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- end explore new style -->
+
+            <!--start Monsoon-ready Styles section -->
+            <div class="col-md-4 Festive-fashion">
+                <div class="card boder-0 p-5 mr">
+                    <div class="d-flex justify-content-between">
+                        <h3>Monsoon-ready Styles</h3>
+                        <span><a href="#">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a></span>
+                    </div>
+                    <div class="row mt-5 Festive-item">
+                        <div class="col-md-6 col-6">
+                            <div class="card mb-3 p-3">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sling-bag/d/g/f/-original-imagz5jy6hhhjkhm.jpeg?q=70"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Sling Bags</h5>
+                                        <span>Min 50% off</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 p-3">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/s/c/o/6-pc-504-n-blu-org-6-picaaso-n-blue-orange-1-original-imah547h3zh7yzrw.jpeg?q=70"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Men’s Sandals & Floaters</h5>
+                                        <span>Min 50% off</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-6">
+                            <div class="card mb-3 p-3">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/slipper-flip-flop/f/b/w/-original-imah4a8cduh7pkh2.jpeg?q=70"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Men’s Slippers & Flip Flops</h5>
+                                        <span>Min 50% off</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 p-3">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/1/0/p/9-bullet-9-go-ride-white-original-imagqmnsfsk9jzpm.jpeg?q=70"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Men’s Sports Shoes</h5>
+                                        <span>Min 50% off</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end Monsoon-ready Styles section -->
+
+            <!-- start Monsoon Essentials -->
+            <div class="col-md-4 Festive-fashion">
+                <div class="card boder-0 p-5">
+                    <div class="d-flex justify-content-between">
+                        <h3>Monsoon Essentials</h3>
+                        <span><a href="#">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a></span>
+                    </div>
+                    <div class="row mt-5 Festive-item">
+                        <div class="col-md-6 col-6">
+                            <div class="card mb-3 p-3">
+                                <img src="https://s3-alpha-sig.figma.com/img/1181/4c43/581f30246a2b6be6e26b9ea2f2ba30aa?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EvGNsLOhCvll8BFdOzC0AVD-0Bkua2gGeMWUHepCHD2Wq~H3MOipzFgzO33iqikaDQMXUdDXvenxOlBd4ZXa25ujWCXfbK3BRDKNUFiGEjgReWM9pJ5YaqoZv3BS3alNfi3CrhYLVE3Rr50tTBWl5Ipiror6hXHvOtUb7cadGfiLBJOvWLzzgZ8piJX5hewedKsAyNhzN7TLOInXBL4q36BzYOUyOXsUtEsOdOMlAPQkRP-vxgj4VQA8lRO5MgPLWWGg0NaFeDbQr7J5bOysahtLqvL7GBnTyERcjh-8NkamzKfZMtR-fUGYMx6EZtY6s9nxk83XRV6gSxa65qI3nQ__"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Speaker</h5>
+                                        <span>Min 50% off</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 p-3">
+                                <img src="https://s3-alpha-sig.figma.com/img/ef0d/b42e/3599a1247e28c7b62e6cc584c4316225?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hTzS78ilUPfiEm7-UGOtDaMGYl~6DOlZAPWji3h~wRpWjGSC1~KEzZQj9Svakvr0TY0TcB3reFZGZNSyG~HR3RS8XmUHjlqzEi2eCD2GTrb80M~ztjSJcwoTQNOKrHZ2mEQTRKYa8hojtydvFlMsEZILUCakjazSzy1m7uYG~p7U2dbJEA2BumaVOOshlUCP2ob0rF3ZnzLchH1AUpGwmHQAvnsZPH56fubWnhrP1Z9W5s4Rh4SdR5DVO9W6j1w0O2dg1gaB5GWxUSzwd-lg1SuuwRSvr2ll-X~xRaAyZAk2jG2WFXuRUVogt41tdSLDOiYlgw6VtY7Ues0nM93fpg__"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Earphone</h5>
+                                        <span>Min 40% off</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-6">
+                            <div class="card mb-3 p-3">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/cap/j/s/u/free-solid-sports-regular-cap-pack-of-2-blucaps-original-imah4jqqmapzbahk.jpeg?q=70"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Men Caps</h5>
+                                        <span>New Collection</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 p-3">
+                                <img src="https://s3-alpha-sig.figma.com/img/0175/3196/dd35201b0c510ec30eb465e806004f92?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nVDvhCjW-LrRw6zoURghThKgkWAEWzua9PIuScIK9h7pHty3-4T6XFfLRcgJ4ttGqTQgd5EK3pTosnHPAPoxcDRnvDXK~OQKl3TRzPJU6qvsjMrM3siPkmGL3yK6kEjJREQzhCHMDKY5jUHy~4MF0Dd7ELrSNwpkph4rYwkhaEHhkf6i3qLe7Ljolqsl1FE7YXEslYLu3pCeWIBCvsNCj~uU9hj5HFHmwFgtyhAXSG2GKfq4Ra1KcOGf1wU2SppNvO6EA~fcQ2x-nvanmtOgeZx~6diVs2J4EM~nAP0gjfttHeBYdmc-nU7b0ryPvfksZPgxJljs6k3obrCErPVewQ__"
+                                    alt="">
+                                <div class="card-body p-0 mt-4">
+                                    <a href="#">
+                                        <h5 class="text-truncate">Umbrellas</h5>
+                                        <span>Special offer</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Monsoon Essentials -->
+
+        <!-- start Fall’s right at home section -->
+        <div class="row mt-5">
+            <div class="col-md-5 col-sm-6 order-sm-1 col-12 pb-3">
+                <div class="card rounded">
+                    <div class="header-sec">
+                        <span class="ms-2 fs-2">Warm hues & cozy vibes</span>
+                        <h1 class=" ms-2">Fall’s right at home </h1><br><br>
+                        <span><a href="#" class="preorder">Shop all</a></span>
+                    </div>
+                    <img src="https://s3-alpha-sig.figma.com/img/b34c/f09f/83e6f50b2f3d9c452aef30118e2dce7b?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YGGcepfp3eF6oj-jmiTQIUARyYH2R9MMJvFvwkKk3J-UKgq05J6kE681fA5NOxaTTHqHiw9WQVmA7g5oBab9JBWX1bcu3Rin90mhryYxvxKgTOHMAOHshvEkSbKdoVc3e7kjLcrCMfij6D9Ybqbc-66W9im3RQetLrVOuP0Sa8yWflO4BA6rDQWk~zA0zGw0rxTUimK8JFDf5JrIpUPeHRiUxSd9jHbZThHUbM8TeGyADMGypvEjIlOMsPXzJy9BN7RoJVhqGJEouEzbIAcbwrESkwZ0EKbrIw1uoyMTP~D5VXTPfLjZRizjK7vfl8VXSKdQj10kejtWaUcKotlCdQ__"
+                        alt="" class="im-f">
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 ordersm-3 col-12">
+                <div class="card">
+                    <div class="header-sec">
+                        <span class="ms-2 fs-2">But first, coffee</span>
+                        <h2 class=" ms-2">Be your own <br>barista
+                        </h2><br><br>
+                        <span><a href="#">Shop now</a></span>
+                    </div>
+                    <img src="https://s3-alpha-sig.figma.com/img/95d0/e1d1/81d4902538e9f4ad66d7557121c1f0e7?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=k5UpeTVgJulY4DAuGDjPL6qmADej4QqEW3XUoOrf04QXxPeZ~qIcXqsHx2U9qMpdtjkzAkHEICgjMFDMJTS-YYak31RbsbKm8uYw4eGHPAqx-ZjWUpTZr~kWdXZlXsrFc2HCVrr6inGnCRY~QdSmwkToLsvNFGFN2oPH~I8W0WIQ8apsyKLeAkOKa1-3Ys~9vmb6jj637KV3Z1hCb6Phymbmk~0~CJLWRenam~nQw27VXEae3d7STAeFQekcbzbwN6cPPhzzr6AIxmpZurXk8pOJSCojE32GnBGAZ1~lcrbhM0lvg~yxLWnICCV8pjxgTWJNpVJX32SEy056ai7wtw__"
+                        alt="">
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6 col-sm-6 col-12 pb-3">
+                        <div class="card">
+                            <div class="header-sec">
+                                <h3 class="ms-2"> Get comfy— <br>bedding & more
+                                </h3><br><br>
+                                <span><a href="#">Shop bedroom</a></span>
+                            </div>
+                            <img src="https://s3-alpha-sig.figma.com/img/d812/01d9/10c84772e18c48f19f526d0843289db5?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GFCL0vrsGiPC9rZSMfADP4GpRjRtaU-twWASnJShPEH3sq4euPHKIlvpjt~klabfGfIkTICXOOk9bvjalXGTX4X0ZVtlMVanQ6CGFoLr1XzafescPRWZYlsrRRBTrcUiwf1SknfbGSx3ZAt69OBMCUKFSZdajkJfoahgqDJmca2MouBpWorltQ4kodTW~KHZ6oMSpgN4r4j8Gh9~cklgbSHThVPInZO4a1-ZfpN9Q3KIr2HT2OeP-x8mui2XVxO16XqHTuu9uX-WWLxrunB8EvyO18OY0rtaNt7hZBhcN8aTgy73tBMFJ9kA8k08F4CirqSFEhDDbTppxsH~QQGhPw__"
+                                alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-12 pb-3">
+                        <div class="card">
+                            <div class="header-sec">
+                                <h3 class="ms-2"> Complete the look</h3><br><br>
+                                <span><a href="#">Shop decor</a></span>
+                            </div>
+                            <img src="https://s3-alpha-sig.figma.com/img/06cf/2704/2654fdf3741cf1377c662eab378a86a9?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DlIErHrDxsmXp0iVyHcTEwoOF-thLHZeilvrcBQlbAZhLa7miAWdOqtniyQABYxBz5yvHFOTmNZ5KxYEtqPYMcHMGq6aA~34PYisU0SHEnDEx4QsdEXbirQ30hsGP2sdB2TWKMyC7SvC1o~xiSJlEfj5MDLJmKYhH42LX6IyGp1O2lj2ESvHi~DHYyrQSoWUPf-pAc16wmJLTry2gwfIC8Kuclva04KIQiR9BIeGA5wwYZweiZEmJvIwsiQHEOC7CbmXSM0jm3b33ebPv7AytX3NUugvnENy7n5-5JwQxfxAbbtyHiuwhm6koQiM3UZSBC5f5NHHXZeE2tHS1T8Pnw__"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 order-sm-2 col-12 pb-3">
+                <div class="card">
+                    <div class="header-sec">
+                        <span class="ms-2 fs-2">Impress guests</span>
+                        <h2 class=" ms-2">Set the table & the
+                            mood
+                        </h2><br><br>
+                        <span><a href="#">Shop now</a></span>
+                    </div>
+                    <img src="https://s3-alpha-sig.figma.com/img/e73b/333e/693d6b53ac8246953de217139dbeed64?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZhtMkOQwPeMGJVppbgDe5nbPIAdqO0ZV0HdlKfPi~3WqUSJMo6Fq~b7kwDI-8Nr6hky1UzOFRHjoYgJHc~9SuxUIUfQuHRsupjMpxRRLyszVlZNvQTCSh84fq3WZ0DLig4MyPqlsBw5N3PWNzZYwMRiB5tb-KrP5tujMevUrXqAxLbOGwd5geVyKmMemt0xC7T17Vv61JcQSoV57bk7nAgjv8easIsn9yPOQxQasR-5jsE7S6I8Ijxe4KZC7PDyuDKhHmD4AmMTNLu0p5fL7z-OSWvA8WVs50Pm8GEY04EAGQ~6v2iaE8vpkcBRTp3t56Lw1Qiex3OwSJ6CXhXxAYQ__"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <!-- end Fall’s right at home section -->
+
+        <!-- start Furniture Deals section -->
+        <div class="row mt-5" id="Flash">
+            <div class="Flash-deals">
+                <div>
+                    <h3>Furniture Deals</h3>
+                </div>
+                <div>
+                    <a href="#">View all</a>
+                </div>
+            </div>
+
+            <!-- start  carousel section -->
+            <div class="owl-carousel owl-theme owl-carousel-2 mt-5">
+                <!-- item-1 -->
+                <div class="item">
+                    <div class="header-icon p-3">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bed-mattress/7/s/h/normal-top-queen-8-66-75-smartgrid-orthopedic-aiha-certified-original-imah3vg9rhq6vkgu.jpeg?q=70"
+                            alt="">
+                    </div>
+                    <div class="price mt-2 text-center">
+                        <a href="#">
+                            <span>Mattresses</span>
+                            <h5>From &#8377;2,990</h5>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- item-2 -->
+                <div class="item">
+                    <div class="header-icon p-3">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/l4n2oi80/sofa-sectional/1/r/o/-original-imagfhzfhfabteeu.jpeg?q=70"
+                            alt="">
+                    </div>
+                    <div class="price mt-2 text-center">
+                        <a href="#">
+                            <span>Sofa & Sectional</span>
+                            <h5>From &#8377;7,990</h5>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- item-3 -->
+                <div class="item">
+                    <div class="header-icon p-3">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/office-study-chair/n/g/p/1-natural-fiber-63-oligo-beaatho-124-original-imah4guj2hgthw6g.jpeg?q=70"
+                            alt="">
+                    </div>
+                    <div class="price mt-2 text-center">
+                        <a href="#">
+                            <span>Office Study Chairs</span>
+                            <h5>From &#8377;1,990</h5>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- item-4 -->
+                <div class="item">
+                    <div class="header-icon p-3">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bed/t/k/e/queen-186-na-no-156-particle-board-no-60-sherpa-queen-bed-original-imah4w4vdbpen4fe.jpeg?q=70"
+                            alt="">
+                    </div>
+                    <div class="price mt-2 text-center">
+                        <a href="#">
+                            <span>Beds</span>
+                            <h5>From &#8377;1,790</h5>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- item-5 -->
+                <div class="item">
+                    <div class="header-icon p-3">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/tv-entertainment-unit/0/8/y/-original-imagrtbhz4heeyyh.jpeg?q=70"
+                            alt="">
+                    </div>
+                    <div class="price mt-2 text-center">
+                        <a href="#">
+                            <span>TV Units</span>
+                            <h5>From &#8377;1,290</h5>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- item-6 -->
+                <div class="item">
+                    <div class="header-icon p-3">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/outdoor-chair/d/p/y/56-6-pp-polypropylene-38-2-45-salsa-black-furniture-yard-84-original-imahfcd65fzqhdje.jpeg?q=70"
+                            alt="">
+                    </div>
+                    <div class="price mt-2 text-center">
+                        <a href="#">
+                            <span>Outdoor Chairs</span>
+                            <h5>From &#8377;990</h5>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- item-7 -->
+                <div class="item">
+                    <div class="header-icon p-3">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/l4n2oi80/sofa-bed/h/z/g/-original-imagfhzygpt8jwwr.jpeg?q=70"
+                            alt="">
+                    </div>
+                    <div class="price mt-2 text-center">
+                        <a href="#">
+                            <span>Sofa Beds</span>
+                            <h5>From &#8377;6,000</h5>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- item-8 -->
+                <div class="item">
+                    <div class="header-icon p-3">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/coffee-table/i/n/w/-original-imagtjkfn4jkxsfz.jpeg?q=70"
+                            alt="">
+                    </div>
+                    <div class="price mt-2 text-center">
+                        <a href="#">
+                            <span>Sofa Tea Table</span>
+                            <h5>From &#8377;2,990</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End  carousel section -->
+
+        <!--start Furniture deals 2 -->
+        <div class="row mt-5 Festive-fashion" id="Flash2">
+            <div class="col-md-12 col-12">
+                <div class="card boder-0 p-5 mr">
+                    <h3 class="text-light">Furniture Deals</h3>
+                    <div class="row mt-5 Festive-item">
+                        <div class="col-md-4 col-4">
+                            <div class="card mb-3 p-3 fd">
+                                <div class="header-icon">
+                                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bed-mattress/7/s/h/normal-top-queen-8-66-75-smartgrid-orthopedic-aiha-certified-original-imah3vg9rhq6vkgu.jpeg?q=70"
+                                        alt="">
+                                </div>
+                                <div class="price mt-2 text-center">
+                                    <a href="#">
+                                        <span>Mattresses</span>
+                                        <h5>From &#8377;2,990</h5>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 p-3 fd">
+                                <div class="header-icon">
+                                    <img src="https://rukminim2.flixcart.com/image/612/612/l4n2oi80/sofa-sectional/1/r/o/-original-imagfhzfhfabteeu.jpeg?q=70"
+                                        alt="">
+                                </div>
+                                <div class="price mt-2 text-center">
+                                    <a href="#">
+                                        <span>Sofa & Sectional</span>
+                                        <h5>From &#8377;7,990</h5>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 p-3 fd">
+                                <div class="header-icon">
+                                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/office-study-chair/n/g/p/1-natural-fiber-63-oligo-beaatho-124-original-imah4guj2hgthw6g.jpeg?q=70"
+                                        alt="">
+                                </div>
+                                <div class="price mt-2 text-center">
+                                    <a href="#">
+                                        <span>Office Study Chairs</span>
+                                        <h5>From &#8377;1,990</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-4">
+                            <div class="card mb-3 p-3 fd">
+                                <div class="header-icon">
+                                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bed/t/k/e/queen-186-na-no-156-particle-board-no-60-sherpa-queen-bed-original-imah4w4vdbpen4fe.jpeg?q=70"
+                                        alt="">
+                                </div>
+                                <div class="price mt-2 text-center">
+                                    <a href="#">
+                                        <span>Beds</span>
+                                        <h5>From &#8377;1,790</h5>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 p-3 fd">
+                                <div class="header-icon">
+                                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/tv-entertainment-unit/0/8/y/-original-imagrtbhz4heeyyh.jpeg?q=70"
+                                        alt="">
+                                </div>
+                                <div class="price mt-2 text-center">
+                                    <a href="#">
+                                        <span>TV Units</span>
+                                        <h5>From &#8377;1,290</h5>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 p-3 fd">
+                                <div class="header-icon">
+                                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/outdoor-chair/d/p/y/56-6-pp-polypropylene-38-2-45-salsa-black-furniture-yard-84-original-imahfcd65fzqhdje.jpeg?q=70"
+                                        alt="">
+                                </div>
+                                <div class="price mt-2 text-center">
+                                    <a href="#">
+                                        <span>Outdoor Chairs</span>
+                                        <h5>From &#8377;990</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-4">
+                            <div class="card mb-3 p-3 fd">
+                                <div class="header-icon">
+                                    <img src="https://rukminim2.flixcart.com/image/612/612/l4n2oi80/sofa-bed/h/z/g/-original-imagfhzygpt8jwwr.jpeg?q=70"
+                                        alt="">
+                                </div>
+                                <div class="price mt-2 text-center">
+                                    <a href="#">
+                                        <span>Sofa Beds</span>
+                                        <h5>From &#8377;6,000</h5>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 p-3 fd">
+                                <div class="header-icon">
+                                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/coffee-table/i/n/w/-original-imagtjkfn4jkxsfz.jpeg?q=70"
+                                        alt="">
+                                </div>
+                                <div class="price mt-2 text-center">
+                                    <a href="#">
+                                        <span>Sofa Tea Table</span>
+                                        <h5>From &#8377;2,990</h5>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 p-3 fd">
+                                <div class="header-icon">
+                                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bed-mattress/7/s/h/normal-top-queen-8-66-75-smartgrid-orthopedic-aiha-certified-original-imah3vg9rhq6vkgu.jpeg?q=70"
+                                        alt="">
+                                </div>
+                                <div class="price mt-2 text-center">
+                                    <a href="#">
+                                        <span>Mattresses</span>
+                                        <h5>From &#8377;2,990</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end Monsoon-ready Styles section -->
+
+        <!--start top Stories section -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="stories">
+                    <div class="header">
+                        <h3>Top Stories :
+                            <a href="#">Brand Directory</a>
+                        </h3>
+                    </div>
+                    <div class="level">
+                        <a href="#">MOST SEARCHED FOR ON FLIPKART : </a>
+                        <a href="#">Flipkart Exchange</a>
+                        <a href="#">Flipkart Reset</a>
+                        <a href="#">Nothing Phone 2a Plus</a>
+                        <a href="#">Sarees</a>
+                        <a href="#">CMF by Nothing Phone 1</a>
+                        <a href="#">Pocket Bazaar</a>
+                        <a href="#">Xiaomi 14 CIVI</a>
+                        <a href="#">Blue iPhone 15 Pro Max Black</a>
+                        <a href="#">Vivo x 100</a>
+                        <a href="#">OnePlus Nord CE 3 Lite 5G</a>
+                        <a href="#">Spoyl Store</a>
+                        <a href="#">SAMSUNG Flip5</a>
+                        <a href="#">SAMSUNG Fold5</a>
+                        <a href="#">Flipkart Axis Bank Super Elite Credit card</a>
+                        <a href="#">Orders</a>
+                        <a href="">Return Orders</a>
+                        <a href="#">Gift Cards Store</a>
+                        <a href="">Flipkart Axis Bank Credit Card</a>
+                        <a href="">Pay Later</a>
+                    </div><br>
+
+                    <div class="level">
+                        <a href="#">MOBILES : </a>
+                        <a href="#">Redmi 12 5G</a>
+                        <a href="#">Realme 12+ 5G</a>
+                        <a href="#">Motorola G84</a>
+                        <a href="#">Realme C53</a>
+                        <a href="#">Infinix Smart 8</a>
+                        <a href="#">Samsung Galaxy S23 5G</a>
+                        <a href="#">Samsung Galaxy S21 FE 5G Qualcomm</a>
+                        <a href="#">vivo V30</a>
+                        <a href="#">HOT 30i</a>
+                        <a href="#">Realme 10 Pro 5G</a>
+                        <a href="#">MOTOROLA G62 5G</a>
+                        <a href="#">Nothing Phone</a>
+                        <a href="#">REDMI Note 12 Pro 5G</a>
+                        <a href="#">Infinix SMART 7</a>
+                        <a href="">Vivo Y12</a>
+                        <a href="#">Oppo A12</a>
+                        <a href="#">Motorola 5g Phone</a>
+                        <a href="#">Realme 5g Smartphone A51</a>
+                        <a href="#">Samsung A31</a>
+                        <a href="#">iPhone 11</a>
+                        <a href="#">iPhone 11 Pro</a>
+                        <a href="#">4G Mobile</a>
+                        <a href="#">Nokia Mobile</a>
+                        <a href="#">Samsung Mobile</a>
+                        <a href="#">iphone</a>
+                        <a href="#">Oppo Mobile</a>
+                        <a href="#">Vivo Mobile</a>
+                    </div><br>
+
+                    <div class="level">
+                        <a href="#">CAMERA : </a>
+                        <a href="#">GoPro Action Camera</a>
+                        <a href="#">Nikon Camera</a>
+                        <a href="#">Canon Camera</a>
+                        <a href="">Sony Camera</a>
+                        <a href="#">Canon DSLR</a>
+                        <a href="">Nikon DSLR</a>
+                    </div><br>
+
+                    <div class="level">
+                        <a href="#">LAPTOP : </a>
+                        <a href="#">Asus ROG Ally</a>
+                        <a href="#">MacBook Pro M2</a>
+                        <a href="#">Premium Laptop</a>
+                        <a href="#"> ASUS ROG Strix SCAR 16 (2023) Core i9 13th Gen</a>
+                        <a href="#">ASUS ROG Zephyrus M16 (2023) Core i9 13th Gen</a>
+                        <a href="#">Laptops Dell Laptops</a>
+                        <a href="#">Asus Laptops</a>
+                        <a href="#">HP Laptops</a>
+                        <a href="#">Gaming Laptops</a>
+                        <a href="#">2 in 1 Laptops</a>
+                        <a href="#">Laptops</a>
+                        <a href="#">Dell latest laptops 2022</a>
+                        <a href="#"> HP latest laptops 2022</a>
+                        <a href="#">nfinix INBook Y1 Plus</a>
+                    </div><br>
+
+                    <div class="level">
+                        <a href="#">TVS : </a>
+                        <a href="#">TVs Nokia TV</a>
+                        <a href="#">Panasonic TV</a>
+                        <a href="#">Thomson TV</a>
+                        <a href="#">Mi X Pro</a>
+                        <a href="#">Realme TV</a>
+                        <a href="#">Motorola TV</a>
+                        <a href="#">OnePlus TVs</a>
+                        <a href="#">LG TV</a>
+                        <a href="#">TV</a>
+                        <a href="#">Sony TV</a>
+                        <a href="#">Samsung TV</a>
+                        <a href="#">Android Television</a>
+                        <a href="#">Iffalcon Tv</a>
+                        <a href="#">Mi TV</a>
+                    </div><br>
+
+                    <div class="level">
+                        <a href="#">LARGE APPLIANCES : </a>
+                        <a href="#"> Television</a>
+                        <a href="#">Washing Machines</a>
+                        <a href="#">Refrigerators</a>
+                        <a href="#">Air Conditioners</a>
+                        <a href="#">Electric Cookers</a>
+                        <a href="#">Electric Jug(Heater) / Travel Kettles</a>
+                        <a href="#">Induction Cooktops</a>
+                    </div><br>
+
+                    <div class="level">
+                        <a href="#">CLOTHING : </a>
+                        <a href="#"> Sarees</a>
+                        <a href="#">Green bridal lehenga</a>
+                        <a href="#">Tops</a>
+                        <a href="#">Apron for Doctors</a>
+                        <a href="#">Shoes</a>
+                        <a href="#">Sunglasses</a>
+                        <a href="#">Bridal Blouse</a>
+                        <a href="#">Half saree blouse designs</a>
+                        <a href="#">Designer blouses</a>
+                        <a href="#">Blouse designs</a>
+                        <a href="#">Shirts</a>
+                        <a href="#">designs</a>
+                        <a href="#">Banarasi saree blouse designs</a>
+                        <a href="#">Stylish blouse astin design</a>
+                        <a href="#">Track Pant</a>
+                        <a href="#">Blouse neck designs</a>
+                        <a href="#">Kurtas</a>
+                        <a href="#">Party Dresses</a>
+                        <a href="#">Palazzo Suits</a>
+                        <a href="#">Anarkali</a>
+                        <a href="#">Gowns</a>
+                        <a href="#">Cut out dress</a>
+                        <a href="#">pants</a>
+                    </div><br>
+
+                    <div class="level">
+                        <a href="#">FOOTWEAR : </a>
+                        <a href="#">Adidas Shoes</a>
+                        <a href="#">Reebok Shoes</a>
+                        <a href="#">Nike Shoes</a>
+                        <a href="#">Puma Shoes</a>
+                        <a href="#">Boots</a>
+                        <a href="#">Bata Shoes</a>
+                        <a href="#">Woodland Shoes</a>
+                        <a href="#">Skechers Shoes</a>
+                        <a href="#">Sneakers</a>
+                        <a href="#">Womens Boots</a>
+                        <a href="#">Sports Shoes</a>
+                    </div><br>
+
+                    <div class="level">
+                        <a href="#">GROCERIES : </a>
+                        <a href="#">PhonePe Grocery Vouche</a>r
+                        <a href="#">Hand Wash</a>
+                        <a href="#">Soap</a>
+                        <a href="#">Cashew Nuts</a>
+                        <a href="#">Sunflower Oil</a>
+                        <a href="#">Eggs</a>
+                        <a href="#">Toilet Cleaner</a>
+                        <a href="#">Harpic Toilet Cleaner</a>
+                        <a href="#">Dettol Soap</a>
+                        <a href="#">Mustard Oil</a>
+                        <a href="#">Biscuits</a>
+                    </div><br>
+
+                    <div class="level">
+                        <a href="#">BEST SELLING ON FLIPKART : </a>
+                        <a href="#">Headphones</a>
+                        <a href="#">Best Gas Geyser</a>
+                        <a href="#">Kitchen Geyser</a>
+                        <a href="#">Nutri Blenders</a>
+                        <a href="#">Portable Air Cooler</a>
+                        <a href="#">Best Air Cooler</a>
+                        <a href="#">Bags</a>
+                        <a href="#">Watches</a>
+                        <a href="#">Wallets</a>
+                        <a href="#">Earrings</a>
+                        <a href="#">Gold Coins</a>
+                        <a href="#">Realme Pad Mini</a>
+                        <a href="#">conekt SW2 martwatch</a>
+                        <a href="#">Mivi DuoPods a350</a>
+                        <a href="#">Speaker Cleaner</a>
+                    </div><br>
+
+                    <div class="level">
+                        <a href="#"> FURNITURE : </a>
+                        <a href="#">Furniture</a>
+                        <a href="#">Sofas</a>
+                        <a href="#">Beds</a>
+                        <a href="#">Dining sets</a>
+                        <a href="#">Wardrobes</a>
+                        <a href="#">Mattresses</a>
+                        <a href="#">TV Units</a>
+                        <a href="#">Tables</a>
+                        <a href="#">Chairs</a>
+                        <a href="#">Shelves</a>
+                        <a href="#">Bean Bags</a>
+                        <a href="#">Office Chairs</a>
+                        <a href="#">Computer Table</a>
+                        <a href="#">Office Tables</a>
+                    </div><br>
+
+                    <div class="level">
+                        <a href="#">BGMH:</a>
+                        <a href="#">Shampoo</a>
+                        <a href="#">Whey Protein</a>
+                        <a href="#">Homeopathy</a>
+                        <a href="#">Cricket</a>
+                        <a href="#">Cycles</a>
+                        <a href="#">Footballs</a>
+                        <a href="#">Treadmills</a>
+                        <a href="#">Christmas Gifts</a>
+                        <a href="#">Fitness Accessories</a>
+                        <a href="#">Online Guitar</a>
+                        <a href="#">Books Store</a>
+                        <a href="#">Supplements</a>
+                    </div><br>
+                </div>
+            </div>
+
+            <div class="col-md-12 mt-5">
+                <div class="Destination">
+                    <div class="header">
+                        <h3>The One-stop Shopping Destination</h3>
+                    </div>
+                    <p>E-commerce is revolutionizing the way we all shop in India. Why do you want t o hop from one
+                        store to another in search of the latest phone when you can find it on the Internet in a single
+                        click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending
+                        electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion
+                        staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets,
+                        dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs,
+                        ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home
+                        furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we
+                        got them all covered. You name it, and you can stay assured about finding them all here. For
+                        those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night
+                        or in the wee hours of the morning. This e-commerce never shuts down.</p>
+                    <br>
+                    <p>What's more, with our year-round shopping festivals and events, our prices are irresistible.
+                        We're sure you'll find yourself picking up more than what you had in mind. If you are wondering
+                        why you should shop from Flipkart when there are multiple options available to you, well, the
+                        below will answer your question.</p>
+                    <br>
+                    <br>
+
+                    <h3>Plus</h3>
+                    <p>A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward
+                        programme for all its regular customers at zero subscription fee. All you need is 500 supercoins
+                        to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4
+                        supercoins & non-plus members earn 2 supercoins. Free delivery, early access during sales and
+                        shopping festivals, exchange offers and priority customer service are the top benefits to a
+                        Flipkart Plus member. In short, earn more when you shop more!</p>
+                    <br>
+                    <br>
+
+                    <p>What's more, you can even use the Flipkart supercoins for a number of exciting services, like:
+                    </p>
+                    <p>An annual Zomato Gold membership</p>
+                    <p>An annual Hotstar Premium membership</p>
+                    <p>6 months Gaana plus subscription</p>
+                    <p>Rupees 550 instant discount on flights on ixigo</p>
+                    <p>Check out https://www.way2it.com/plus/all-offers for the entire list. Terms and conditions apply.
+                    </p>
+                    <br>
+                    <br>
+
+                    <h3>No Cost EMI</h3>
+                    <p>In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to
+                        shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles,
+                        laptops, large and small appliances, furniture, electronics and watches, you can now shop
+                        without burning a hole in your pocket. If you've been eyeing a product for a long time, chances
+                        are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.</p>
+                    <br>
+                    <br>
+
+                    <h3>EMI on Debit Cards</h3>
+                    <p>Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14
+                        crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online
+                        shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop
+                        confidently with us without having to worry about pauses in monthly cash flow. At present, we
+                        have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility.
+                        More power to all our shoppers! Terms and conditions apply.</p>
+                    <br>
+                    <br>
+
+                    <h3>Mobile Exchange Offers</h3>
+                    <p>Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a
+                        new one after the Flipkart experts calculate the value of your old phone, provided it is in a
+                        working condition without damage to the screen. If a phone is applicable for an exchange offer,
+                        you will see the 'Buy with Exchange' option on the product description of the phone. So, be
+                        smart, always opt for an exchange wherever possible. Terms and conditions apply.</p>
+                    <br>
+                    <br>
+
+                    <h3>What Can You Buy From ?</h3>
+                    <br><br>
+                    <h3>Mobile Phones</h3>
+                    <p>From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there.
+                        Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast
+                        processors, beautification apps, high-tech selfie cameras or just large internal space, we take
+                        care of all the essentials. Shop from top brands in the country like Samsung, Apple, Oppo,
+                        Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured, you're buying from only the most
+                        reliable names in the market. What's more, with Flipkart's Complete Mobile Protection Plan, you
+                        will never again find the need to run around service centres. This plan entails you to a number
+                        of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage
+                        to phone, hardware and software glitches, and replacements - the Complete Mobile Protection
+                        covers a comprehensive range of post-purchase problems, with door-to-door services.</p>
+                    <br>
+                    <br>
+
+                    <h3>Electronic Devices and Accessories</h3>
+                    <p>When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating
+                        systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for
+                        personalized results in a flash. All you students out there, confused about what laptop to get?
+                        Our Back To College Store segregates laptops purpose wise (gaming, browsing and research,
+                        project work, entertainment, design, multitasking) with recommendations from top brands and
+                        industry experts, facilitating a shopping experience that is quicker and simpler.</p>
+
+                    <p>Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever
+                        reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for
+                        adventure junkies: our range of cameras is as much for beginners as it is for professionals.
+                        Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. Photography
+                        lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable
+                        point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure
+                        junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon,
+                        GoPro, Sony, and Fujifilm are some big names you'll find in our store.</p>
+
+                    <p>Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate
+                        range of Sony home theatres, JBL soundbars and Philips tower speakers for an experience to
+                        remember.</p>
+
+                    <p>How about jazzing up your phone with our quirky designer cases and covers? Our wide-ranging
+                        mobile accessories starting from headphones, power banks, memory cards, mobile chargers, to
+                        selfie sticks can prove to be ideal travel companions for you and your phone; never again worry
+                        about running out of charge or memory on your next vacation.</p>
+                    <br><br>
+
+                    <h3>Large Appliances</h3>
+                    <p>Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines - discover
+                        everything you need to run a house under one roof. Our Dependable TV and Appliance Store ensures
+                        zero transit damage, with a replacement guarantee if anything goes wrong; delivery and
+                        installation as per your convenience and a double warranty (Official Brand Warranty along with
+                        an extended Flipkart Warranty) - rest assured, value for money is what is promised and
+                        delivered. Shop from market leaders in the country like Samsung, LG, Whirlpool, Midea, Mi, Vu,
+                        Panasonic, Godrej, Sony, Daikin, and Hitachi among many others.</p>
+
+                    <p>For certain product categories, Customers meeting the eligibility criteria will have the option
+                        to buy larger quantities. To know more on the eligibility criteria and terms and conditions,
+                        please reach out to Purchases.oni@flipkart.com.</p>
+                    <br><br>
+
+                    <h3>Small Home Appliances</h3>
+                    <p>Find handy and practical home appliances designed to make your life simpler: electric kettles,
+                        OTGs, microwave ovens, sandwich makers, hand blenders, coffee makers, and many more other
+                        time-saving appliances that are truly crafted for a quicker lifestyle. Live life king size with
+                        these appliances at home.</p>
+                    <br><br>
+
+                    <h3>Lifestyle</h3>
+                    <p>Flipkart, 'India ka Fashion Capital', is your one-stop fashion destination for anything and
+                        everything you need to look good. Our exhaustive range of Western and Indian wear, summer and
+                        winter clothing, formal and casual footwear, bridal and artificial jewellery, long-lasting
+                        make-up, grooming tools and accessories are sure to sweep you off your feet. Shop from crowd
+                        favourites like Vero Moda, Forever 21, Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and
+                        Sephora among dozens of other top-of-the-ladder names. From summer staple maxi dresses,
+                        no-nonsense cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you
+                        canrely on us for a wardrobe that is up to date. Explore our in-house brands like Metronaut,
+                        Anmi, and Denizen, to name a few, for carefully curated designs that are the talk of the town.
+                        Get ready to be spoiled for choice.Festivals, office get-togethers, weddings, brunches, or
+                        nightwear - Flipkart will have your back each time.</p>
+                    <br><br>
+
+                    <h3>Home and Furniture</h3>
+                    <p>Moving to a new place is never easy, especially if you're buying new furniture. Beds, sofa sets,
+                        dining tables, wardrobes, and TV units - it's not easy to set up everything again. With the
+                        hundreds of options thrown at you, the ride could be overwhelming. What place is reliable, what
+                        furniture will stand the test of time? These are questions you must ask before you choose a
+                        store. Well, our Durability Certified Furniture Store has not only curated a range of furniture
+                        keeping in mind the modern Indian consumer but furniture that comes with a lab certification,
+                        ensuring they last you for up to 10 years. Yes, all our furniture has gone through 35 stability
+                        and load tests so that you receive only the best-quality furniture. Be FurniSure, always. Names
+                        to look out for are Nilkamal, Godrej Interio, Urban Ladder, HomeTown, Durian and Perfect Homes.
+                    </p>
+
+                    <p>You may have your furniture all set up, but they could end up looking flat and incomplete without
+                        complementary decor. Curtains, cushion covers, bed sheets, wall shelves, paintings, floor lamps
+                        - find everything that turns a house to an inviting home under one roof at Flipkart.</p>
+                    <br><br>
+
+                    <h3>Baby and Kids</h3>
+                    <p>Your kids deserve only the best. From bodysuits, booties, diapers to strollers, if you're an
+                        expecting mother or a new mother, you will find everything you need to set sail on a smooth
+                        parenting journey with the help of our baby care collection. When it comes to safety, hygiene
+                        and comfort, you can rely on us without a second thought. Huggies, Pampers, MamyPoko, and
+                        Johnson & Johnson: we host only the most-trusted names in the business for your baby.</p>
+                    <br><br>
+
+                    <h3>Books, Sports and Games</h3>
+                    <p>Work hard and no play? We don't believe in that. Get access to best-selling fiction and
+                        non-fiction books by your favourite authors, thrilling English and Indian blockbusters,
+                        most-wanted gaming consoles, and a tempting range of fitness and sports gadgets and equipment
+                        bound to inspire you to get moving.</p>
+                    <br><br>
+
+                    <h3>Grocery/Supermart</h3>
+                    <p>Launching into the grocery vertical, Flipkart introduces Supermart that is out to bring everyday
+                        essentials close to you. From pulses, spices, dairy, personal and sanitary care, breakfast
+                        essentials, health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to
+                        present everything you need to run a house. Now buy Grocery products for as low as 1 Rupee only
+                        - our 1 Rupee Store presents new products every day for a nominal price of 1 Rupee only. Terms
+                        and conditions apply.</p>
+                </div>
+            </div>
+        </div>
+        <!--end top Stories section -->
+    </div>
+    </div>
+    </div>
+
+    <!-- Start footer section  -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row m-5 p-5">
+                <div class=" col-lg-2 col-md-4 col-sm-4 col-6 mb-5">
+                    <div class="footer-widget">
+                        <div class="footer-heading">
+                            <h3>ABOUT</h3>
+                        </div>
+                        <ul class="ps-0">
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Flipkart Stories</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Corporate Information</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 mb-5">
+                    <div class="footer-widget">
+                        <div class="footer-heading">
+                            <h3>GROUP COMPANIES</h3>
+                        </div>
+                        <ul class="ps-0">
+                            <li><a href="#">Myntra</a></li>
+                            <li><a href="#">Cleartrip</a></li>
+                            <li><a href="#">Shopsy</a></li>
+                            <li><a href="#">Flipkart Stories</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Corporate Information</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-4  col-6 mb-5">
+                    <div class="footer-widget">
+                        <div class="footer-heading">
+                            <h3>HELP</h3>
+                        </div>
+                        <ul class="ps-0">
+                            <li><a href="#">Payments</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Cancellation & Returns</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Report Infringment</a></li>
+                            <li><a href="#">Corporate Information</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 mb-5">
+                    <div class="footer-widget">
+                        <div class="footer-heading">
+                            <h3>CONSUMER POLICY</h3>
+                        </div>
+                        <ul class="ps-0">
+                            <li><a href="#">Cancellation & Returns</a></li>
+                            <li><a href="#">Terms od Use</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Grievance Redressal</a></li>
+                            <li><a href="#">EPR Compliance</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 mb-5">
+                    <div class="footer-widget v-line mb-5">
+                        <div class="footer-heading">
+                            <h3>Mail Us:</h3>
+                        </div>
+                        <ul class="ps-0">
+                            <li>Flipkart Internet Private Limited,</li>
+                            <li>Building Alyssa, Begonia &</li>
+                            <li>Clove Embassy Tech Village,</li>
+                            <li>Outer Ring Road, Devarabeesanahalli Village,</li>
+                            <li>Bengaluru, 560103</li>
+                            <li>Karnatka, India</li>
+                        </ul>
+                        <div class="footer-heading">
+                            <h3>Social :</h3>
+                        </div>
+                        <ul class="social-links ps-0">
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 mb-5">
+                    <div class="footer-widget">
+                        <div class="footer-heading">
+                            <h3>Registered office Address:</h3>
+                        </div>
+                        <ul class="ps-0">
+                            <li>Flipkart Internet Private Limited,</li>
+                            <li>Building Alyssa, Begonia &</li>
+                            <li>Clove Embassy Tech Village,</li>
+                            <li>Outer Ring Road, Devarabeesanahalli Village,</li>
+                            <li>Bengaluru, 560103</li>
+                            <li>Karnatka, India</li>
+                            <li>CIN : U51109KA201PTC066107</li>
+                            <li>Telphone: 044-45614700/044-67415800</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pb-3 h-line">
+                <div class="col-lg-6 col-sm-12 col-12">
+                    <div class="footer-widget">
+                        <ul class="copyright mt-4">
+                            <li><a href="#"><i class="fas fa-store"></i> Become a Seller</a></li>
+                            <li><a href="#"><i class="fas fa-bullhorn"></i> Advertise</a></li>
+                            <li><a href="#"><i class="fas fa-gift"></i> Gift Card</a></li>
+                            <li><a href="#"><i class="fa-regular fa-circle-question"></i> Help Center</a></li>
+                            <li><a href="#"><i class="fa-regular fa-copyright"></i> 2007-2024 Way2it.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-sm-12 col-12">
+                    <div class="payment mt-4">
+                        <a href="#"><img
+                                src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer section  -->
+</body>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+
+
+</script>
+<script src="main.js"></script>
+</body>
+
+</html>
